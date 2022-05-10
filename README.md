@@ -1,5 +1,6 @@
-# [Machine Learning Scripting](https://github.com/ashioyajotham/ML-Algorithms/blob/main/ML%20Scripting.ipynb)
 * General machine learning practices
+
+# [Machine Learning Scripting](https://github.com/ashioyajotham/ML-Algorithms/blob/main/ML%20Scripting.ipynb)
 * For our first file, we use the `IRIS` dataset, considered as the "hello world" of machine learning to classify flowers in Python through the command-line.
   It is basically similar to using Jupyter notebooks but slightly different in syntax and easier.
 * The machine learning algorithms include:
