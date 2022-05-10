@@ -38,3 +38,9 @@
 
 CC: [inria Machine learning in Python with scikit-learn](https://inria.github.io/scikit-learn-mooc/)
     (https://www.inria.fr/en/mooc-scikit-learn)
+    
+    
+    
+
+# [Orinary Least Squares (OLS) algorithm](https://github.com/ashioyajotham/ML-Algorithms/blob/main/ols-models.ipynb)
+* This case we take a closer look at the OLS model from the `statsmodels` library
