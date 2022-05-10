@@ -21,7 +21,7 @@
 
 
 
-#[Modelling Non-Linear Features-Target Relationship](https://github.com/ashioyajotham/ML-Algorithms/blob/main/linear-regression-non-linear-btn-data-and-target.ipynb)
+# [Modelling Non-Linear Features-Target Relationship](https://github.com/ashioyajotham/ML-Algorithms/blob/main/linear-regression-non-linear-btn-data-and-target.ipynb)
 * Linear regression with non-linear link between data and target
 * The deployment of scikit-learn in linear models in this case, Linear Regression
 * Machine learning modelling alogorithms:
