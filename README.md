@@ -44,3 +44,9 @@ CC: [inria Machine learning in Python with scikit-learn](https://inria.github.io
 
 # [Orinary Least Squares (OLS) algorithm](https://github.com/ashioyajotham/ML-Algorithms/blob/main/ols-models.ipynb)
 * This case we take a closer look at the OLS model from the `statsmodels` library
+
+
+
+
+# [Titanic](https://github.com/ashioyajotham/ML-Algorithms/blob/main/titanic-classification.ipynb)
+* Of course it can't be complete without the "hello world" of machine learning. Here we look at `Random Classifiers` and `Logistic Regression`
