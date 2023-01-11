@@ -8,7 +8,8 @@ Original file is located at
 
 ### In this file, we will use the flask web framework to handle the POST requests that we will get from the request.py.
 """
-
+#import requests
+import json
 import numpy as np
 from flask import Flask, request, jsonify
 import pickle

@@ -13,8 +13,6 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 import pickle
-import requests
-import json
 # Importing the dataset
 url = "https://raw.githubusercontent.com/vyashemang/flask-salary-predictor/master/Salary_Data.csv"
 dataset = pd.read_csv(url)
