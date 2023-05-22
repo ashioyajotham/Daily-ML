@@ -1,0 +1,421 @@
+poll,country,points
+Albania,Sweden,12
+Albania,Finland,10
+Albania,Austria,8
+Albania,United Kingdom,7
+Albania,France,6
+Albania,Norway,5
+Albania,Czechia,4
+Albania,Israel,3
+Albania,Spain,2
+Albania,Slovenia,1
+Andorra,Finland,12
+Andorra,Spain,10
+Andorra,Sweden,8
+Andorra,France,7
+Andorra,United Kingdom,6
+Andorra,Italy,5
+Andorra,Austria,4
+Andorra,Slovenia,3
+Andorra,Norway,2
+Andorra,Israel,1
+Armenia,Sweden,12
+Armenia,Austria,10
+Armenia,Israel,8
+Armenia,Finland,7
+Armenia,Norway,6
+Armenia,France,5
+Armenia,United Kingdom,4
+Armenia,Spain,3
+Armenia,Georgia,2
+Armenia,Czechia,1
+Australia,Finland,12
+Australia,Sweden,10
+Australia,Austria,8
+Australia,France,7
+Australia,Norway,6
+Australia,United Kingdom,5
+Australia,Czechia,4
+Australia,Cyprus,3
+Australia,Serbia,2
+Australia,Moldova,1
+Austria,Finland,12
+Austria,Sweden,10
+Austria,France,8
+Austria,Norway,7
+Austria,Italy,6
+Austria,Belgium,5
+Austria,United Kingdom,4
+Austria,Moldova,3
+Austria,Czechia,2
+Austria,Israel,1
+Azerbaijan,Sweden,12
+Azerbaijan,Norway,10
+Azerbaijan,Austria,8
+Azerbaijan,Spain,7
+Azerbaijan,United Kingdom,6
+Azerbaijan,Finland,5
+Azerbaijan,Italy,4
+Azerbaijan,Czechia,3
+Azerbaijan,Israel,2
+Azerbaijan,France,1
+Belgium,Sweden,12
+Belgium,Finland,10
+Belgium,France,8
+Belgium,Norway,7
+Belgium,Austria,6
+Belgium,Italy,5
+Belgium,United Kingdom,4
+Belgium,Israel,3
+Belgium,Czechia,2
+Belgium,Slovenia,1
+Bulgaria,Finland,12
+Bulgaria,Czechia,10
+Bulgaria,Austria,8
+Bulgaria,Sweden,7
+Bulgaria,Norway,6
+Bulgaria,France,5
+Bulgaria,Slovenia,4
+Bulgaria,Spain,3
+Bulgaria,United Kingdom,2
+Bulgaria,Armenia,1
+Croatia,Norway,12
+Croatia,Sweden,10
+Croatia,Finland,8
+Croatia,Slovenia,7
+Croatia,Italy,6
+Croatia,Austria,5
+Croatia,Spain,4
+Croatia,United Kingdom,3
+Croatia,Czechia,2
+Croatia,Armenia,1
+Cyprus,Sweden,12
+Cyprus,France,10
+Cyprus,Finland,8
+Cyprus,Norway,7
+Cyprus,Israel,6
+Cyprus,Italy,5
+Cyprus,United Kingdom,4
+Cyprus,Austria,3
+Cyprus,Czechia,2
+Cyprus,Greece,1
+Czechia,Sweden,12
+Czechia,France,10
+Czechia,Norway,8
+Czechia,Austria,7
+Czechia,Finland,6
+Czechia,Italy,5
+Czechia,Israel,4
+Czechia,United Kingdom,3
+Czechia,Switzerland,2
+Czechia,Moldova,1
+Denmark,Sweden,12
+Denmark,Finland,10
+Denmark,France,8
+Denmark,Norway,7
+Denmark,Italy,6
+Denmark,United Kingdom,5
+Denmark,Austria,4
+Denmark,Serbia,3
+Denmark,Germany,2
+Denmark,Portugal,1
+Estonia,Sweden,12
+Estonia,Finland,10
+Estonia,France,8
+Estonia,Italy,7
+Estonia,Switzerland,6
+Estonia,Israel,5
+Estonia,Netherlands,4
+Estonia,Austria,3
+Estonia,United Kingdom,2
+Estonia,Norway,1
+Finland,France,12
+Finland,Norway,10
+Finland,Austria,8
+Finland,Sweden,7
+Finland,Italy,6
+Finland,Czechia,5
+Finland,Serbia,4
+Finland,United Kingdom,3
+Finland,Moldova,2
+Finland,Australia,1
+France,Sweden,12
+France,Norway,10
+France,Finland,8
+France,Austria,7
+France,Italy,6
+France,Belgium,5
+France,Israel,4
+France,Czechia,3
+France,Slovenia,2
+France,Estonia,1
+Germany,Finland,12
+Germany,Italy,10
+Germany,France,8
+Germany,Sweden,7
+Germany,Austria,6
+Germany,Norway,5
+Germany,Portugal,4
+Germany,Switzerland,3
+Germany,Moldova,2
+Germany,Spain,1
+Germany EC,Finland,12
+Germany EC,Sweden,10
+Germany EC,France,8
+Germany EC,Italy,7
+Germany EC,Norway,6
+Germany EC,Austria,5
+Germany EC,United Kingdom,4
+Germany EC,Czechia,3
+Germany EC,Switzerland,2
+Germany EC,Spain,1
+Greece,Sweden,12
+Greece,France,10
+Greece,Finland,8
+Greece,Norway,7
+Greece,Italy,6
+Greece,Israel,5
+Greece,United Kingdom,4
+Greece,Austria,3
+Greece,Cyprus,2
+Greece,Czechia,1
+Hungary,Sweden,12
+Hungary,Norway,10
+Hungary,Finland,8
+Hungary,Austria,7
+Hungary,France,6
+Hungary,Czechia,5
+Hungary,Italy,4
+Hungary,Moldova,3
+Hungary,Israel,2
+Hungary,United Kingdom,1
+Iceland,Finland,12
+Iceland,Sweden,10
+Iceland,France,8
+Iceland,Norway,7
+Iceland,Italy,6
+Iceland,Austria,5
+Iceland,United Kingdom,4
+Iceland,Czechia,3
+Iceland,Israel,2
+Iceland,Moldova,1
+Ireland,Finland,12
+Ireland,Sweden,10
+Ireland,France,8
+Ireland,Austria,7
+Ireland,Norway,6
+Ireland,United Kingdom,5
+Ireland,Italy,4
+Ireland,Spain,3
+Ireland,Czechia,2
+Ireland,Israel,1
+Israel,Sweden,12
+Israel,Finland,10
+Israel,Norway,8
+Israel,France,7
+Israel,United Kingdom,6
+Israel,Spain,5
+Israel,Italy,4
+Israel,Austria,3
+Israel,Czechia,2
+Israel,Netherlands,1
+Italy,France,12
+Italy,Finland,10
+Italy,Sweden,8
+Italy,Austria,7
+Italy,Norway,6
+Italy,Czechia,5
+Italy,Spain,4
+Italy,United Kingdom,3
+Italy,Portugal,2
+Italy,Armenia,1
+Latvia,Sweden,12
+Latvia,Norway,10
+Latvia,France,8
+Latvia,Italy,7
+Latvia,Switzerland,6
+Latvia,Estonia,5
+Latvia,Cyprus,4
+Latvia,Finland,3
+Latvia,United Kingdom,2
+Latvia,Czechia,1
+Lithuania,Sweden,12
+Lithuania,Finland,10
+Lithuania,Italy,8
+Lithuania,Austria,7
+Lithuania,Norway,6
+Lithuania,Slovenia,5
+Lithuania,France,4
+Lithuania,Serbia,3
+Lithuania,Spain,2
+Lithuania,Armenia,1
+Luxembourg,France,12
+Luxembourg,Italy,10
+Luxembourg,Finland,8
+Luxembourg,Austria,7
+Luxembourg,United Kingdom,6
+Luxembourg,Belgium,5
+Luxembourg,Moldova,4
+Luxembourg,Portugal,3
+Luxembourg,Malta,2
+Luxembourg,Sweden,1
+Malta,Sweden,12
+Malta,Norway,10
+Malta,Italy,8
+Malta,Finland,7
+Malta,United Kingdom,6
+Malta,Israel,5
+Malta,France,4
+Malta,Cyprus,3
+Malta,Austria,2
+Malta,Poland,1
+Netherlands,Finland,12
+Netherlands,Sweden,10
+Netherlands,France,8
+Netherlands,Austria,7
+Netherlands,Norway,6
+Netherlands,United Kingdom,5
+Netherlands,Czechia,4
+Netherlands,Italy,3
+Netherlands,Spain,2
+Netherlands,Armenia,1
+North Macedonia,Italy,12
+North Macedonia,Finland,10
+North Macedonia,Sweden,8
+North Macedonia,France,7
+North Macedonia,Norway,6
+North Macedonia,Serbia,5
+North Macedonia,Spain,4
+North Macedonia,Slovenia,3
+North Macedonia,United Kingdom,2
+North Macedonia,Croatia,1
+Norway,Finland,12
+Norway,France,10
+Norway,Sweden,8
+Norway,Italy,7
+Norway,Austria,6
+Norway,United Kingdom,5
+Norway,Czechia,4
+Norway,Israel,3
+Norway,Moldova,2
+Norway,Cyprus,1
+Poland,Sweden,12
+Poland,Finland,10
+Poland,Austria,8
+Poland,France,7
+Poland,Norway,6
+Poland,Czechia,5
+Poland,Italy,4
+Poland,United Kingdom,3
+Poland,Slovenia,2
+Poland,Moldova,1
+Portugal,France,12
+Portugal,Finland,10
+Portugal,Italy,8
+Portugal,Sweden,7
+Portugal,Spain,6
+Portugal,Norway,5
+Portugal,Austria,4
+Portugal,Israel,3
+Portugal,United Kingdom,2
+Portugal,Armenia,1
+Romania,Sweden,12
+Romania,Italy,10
+Romania,Israel,8
+Romania,Moldova,7
+Romania,Finland,6
+Romania,France,5
+Romania,Azerbaijan,4
+Romania,Spain,3
+Romania,Austria,2
+Romania,United Kingdom,1
+Serbia,Finland,12
+Serbia,Sweden,10
+Serbia,Austria,8
+Serbia,France,7
+Serbia,Italy,6
+Serbia,Spain,5
+Serbia,Czechia,4
+Serbia,Slovenia,3
+Serbia,Norway,2
+Serbia,Armenia,1
+Slovenia,Sweden,12
+Slovenia,Italy,10
+Slovenia,France,8
+Slovenia,Norway,7
+Slovenia,Finland,6
+Slovenia,Belgium,5
+Slovenia,United Kingdom,4
+Slovenia,Czechia,3
+Slovenia,Austria,2
+Slovenia,Poland,1
+Spain,Sweden,12
+Spain,Finland,10
+Spain,United Kingdom,8
+Spain,France,7
+Spain,Italy,6
+Spain,Norway,5
+Spain,Austria,4
+Spain,Israel,3
+Spain,Portugal,2
+Spain,Slovenia,1
+Sweden,Finland,12
+Sweden,France,10
+Sweden,Italy,8
+Sweden,Norway,7
+Sweden,United Kingdom,6
+Sweden,Austria,5
+Sweden,Switzerland,4
+Sweden,Israel,3
+Sweden,Czechia,2
+Sweden,Cyprus,1
+Switzerland,France,12
+Switzerland,Sweden,10
+Switzerland,Finland,8
+Switzerland,Austria,7
+Switzerland,Norway,6
+Switzerland,Italy,5
+Switzerland,United Kingdom,4
+Switzerland,Czechia,3
+Switzerland,Slovenia,2
+Switzerland,Moldova,1
+Turkey,Sweden,12
+Turkey,Finland,10
+Turkey,Norway,8
+Turkey,United Kingdom,7
+Turkey,Israel,6
+Turkey,France,5
+Turkey,Austria,4
+Turkey,Italy,3
+Turkey,Spain,2
+Turkey,Czechia,1
+Ukraine,Finland,12
+Ukraine,Sweden,10
+Ukraine,Norway,8
+Ukraine,Austria,7
+Ukraine,Spain,6
+Ukraine,Lithuania,5
+Ukraine,Moldova,4
+Ukraine,United Kingdom,3
+Ukraine,Israel,2
+Ukraine,Georgia,1
+United Kingdom,Sweden,12
+United Kingdom,Finland,10
+United Kingdom,Austria,8
+United Kingdom,France,7
+United Kingdom,Norway,6
+United Kingdom,Italy,5
+United Kingdom,Czechia,4
+United Kingdom,Israel,3
+United Kingdom,Australia,2
+United Kingdom,Belgium,1
+World,Finland,12
+World,Sweden,10
+World,Austria,8
+World,France,7
+World,Norway,6
+World,United Kingdom,5
+World,Italy,4
+World,Spain,3
+World,Portugal,2
+World,Czechia,1
