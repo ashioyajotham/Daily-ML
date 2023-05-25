@@ -1,0 +1,26 @@
+<annotation>
+	<folder>crop512_512</folder>
+	<filename>0129_0_5.JPG</filename>
+	<path>D:\UAVpic\uav_train\New\crop512_512\0129_0_5.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Oblique crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>35</xmin>
+			<ymin>321</ymin>
+			<xmax>264</xmax>
+			<ymax>416</ymax>
+		</bndbox>
+	</object>
+</annotation>

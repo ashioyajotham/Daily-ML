@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Afroza</folder>
+	<filename>00318514-00011485.jpg</filename>
+	<path>/home/senjuti/Omdena_Asphalt/Afroza/00318514-00011485.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Rut</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>457</xmin>
+			<ymin>10</ymin>
+			<xmax>493</xmax>
+			<ymax>505</ymax>
+		</bndbox>
+	</object>
+</annotation>

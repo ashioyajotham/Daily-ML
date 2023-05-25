@@ -1,0 +1,38 @@
+<annotation>
+	<folder>crop512_512</folder>
+	<filename>0021_3_3.JPG</filename>
+	<path>D:\UAVpic\tuoheng\padding_1\crop512_512\0021_3_3.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Alligator crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>102</xmin>
+			<ymin>230</ymin>
+			<xmax>289</xmax>
+			<ymax>305</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Alligator crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>303</xmin>
+			<ymin>50</ymin>
+			<xmax>500</xmax>
+			<ymax>128</ymax>
+		</bndbox>
+	</object>
+</annotation>

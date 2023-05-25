@@ -1,0 +1,38 @@
+<annotation>
+	<folder>test_resized</folder>
+	<filename>00116825-00005973.jpg</filename>
+	<path>D:\Omdena\data\resized_dataset\test_resized\00116825-00005973.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Longitudinal crack</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>408</xmin>
+			<ymin>1</ymin>
+			<xmax>481</xmax>
+			<ymax>155</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Longitudinal crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>418</xmin>
+			<ymin>145</ymin>
+			<xmax>472</xmax>
+			<ymax>504</ymax>
+		</bndbox>
+	</object>
+</annotation>

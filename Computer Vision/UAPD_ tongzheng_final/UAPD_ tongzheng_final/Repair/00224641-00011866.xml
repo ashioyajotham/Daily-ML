@@ -1,0 +1,50 @@
+<annotation>
+	<folder>assignment</folder>
+	<filename>00224641-00011866.jpg</filename>
+	<path>D:\projects\omdena_phc_asphalt_classification\tongzheng_resized_dataset\resized_dataset\assignment\00224641-00011866.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Repair area</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>348</xmin>
+			<ymin>8</ymin>
+			<xmax>493</xmax>
+			<ymax>443</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Repair area</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>346</xmin>
+			<ymin>447</ymin>
+			<xmax>460</xmax>
+			<ymax>512</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Rut</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>5</xmin>
+			<ymin>397</ymin>
+			<xmax>98</xmax>
+			<ymax>487</ymax>
+		</bndbox>
+	</object>
+</annotation>

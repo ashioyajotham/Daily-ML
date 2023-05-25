@@ -1,0 +1,38 @@
+<annotation>
+	<folder>train_resized</folder>
+	<filename>00117388-00005802.jpg</filename>
+	<path>/Users/deepthivarun/Desktop/Omdena_Proj1/resized_dataset 3/train_resized/00117388-00005802.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Rut</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>281</xmin>
+			<ymin>6</ymin>
+			<xmax>328</xmax>
+			<ymax>511</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Rut</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>352</xmin>
+			<ymin>2</ymin>
+			<xmax>395</xmax>
+			<ymax>511</ymax>
+		</bndbox>
+	</object>
+</annotation>

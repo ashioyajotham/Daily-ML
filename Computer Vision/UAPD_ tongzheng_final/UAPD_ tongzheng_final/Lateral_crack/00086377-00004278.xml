@@ -1,0 +1,38 @@
+<annotation>
+	<folder>images</folder>
+	<filename>00086377-00004278.jpg</filename>
+	<path>C:\Users\vojed\Documents\Python Scripts\data\validation\images\00086377-00004278.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1024</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Lateral crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>24</xmin>
+			<ymin>684</ymin>
+			<xmax>492</xmax>
+			<ymax>800</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Repair area</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>5</xmin>
+			<ymin>478</ymin>
+			<xmax>134</xmax>
+			<ymax>613</ymax>
+		</bndbox>
+	</object>
+</annotation>

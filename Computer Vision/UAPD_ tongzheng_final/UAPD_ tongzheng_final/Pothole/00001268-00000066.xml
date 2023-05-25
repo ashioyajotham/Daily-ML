@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train_1</folder>
+	<filename>00001268-00000066.jpg</filename>
+	<path>C:\Users\vojed\Documents\Python Scripts\data\train_1\00001268-00000066.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Pothole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>329</xmin>
+			<ymin>302</ymin>
+			<xmax>391</xmax>
+			<ymax>367</ymax>
+		</bndbox>
+	</object>
+</annotation>

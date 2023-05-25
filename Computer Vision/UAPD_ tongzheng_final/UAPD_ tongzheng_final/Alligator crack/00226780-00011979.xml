@@ -1,0 +1,26 @@
+<annotation>
+	<folder>assignment</folder>
+	<filename>00226780-00011979.jpg</filename>
+	<path>D:\projects\omdena_phc_asphalt_classification\tongzheng_resized_dataset\resized_dataset\assignment\00226780-00011979.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Alligator crack</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>6</ymin>
+			<xmax>96</xmax>
+			<ymax>195</ymax>
+		</bndbox>
+	</object>
+</annotation>

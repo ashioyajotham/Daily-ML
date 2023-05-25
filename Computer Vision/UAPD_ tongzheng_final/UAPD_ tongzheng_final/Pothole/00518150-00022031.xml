@@ -1,0 +1,26 @@
+<annotation>
+	<folder>test_resized</folder>
+	<filename>00518150-00022031.jpg</filename>
+	<path>D:\Data Science\Omdena\Asphalt\tongzheng_resized_dataset\resized_dataset\test_resized\00518150-00022031.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Pothole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>377</xmin>
+			<ymin>202</ymin>
+			<xmax>437</xmax>
+			<ymax>269</ymax>
+		</bndbox>
+	</object>
+</annotation>

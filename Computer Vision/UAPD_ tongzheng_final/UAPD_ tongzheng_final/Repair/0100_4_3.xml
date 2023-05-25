@@ -1,0 +1,26 @@
+<annotation>
+	<folder>crop512_512</folder>
+	<filename>0100_4_3.JPG</filename>
+	<path>D:\UAVpic\uav_train\New\crop512_512\0100_4_3.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Repair</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>270</xmin>
+			<ymin>166</ymin>
+			<xmax>412</xmax>
+			<ymax>403</ymax>
+		</bndbox>
+	</object>
+</annotation>

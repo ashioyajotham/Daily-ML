@@ -1,0 +1,38 @@
+<annotation>
+	<folder>crop512_512</folder>
+	<filename>0074_3_4.JPG</filename>
+	<path>D:\UAVpic\uav_train\New\crop512_512\0074_3_4.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Transverse crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>78</xmin>
+			<ymin>166</ymin>
+			<xmax>165</xmax>
+			<ymax>180</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Transverse crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>210</xmin>
+			<ymin>142</ymin>
+			<xmax>240</xmax>
+			<ymax>159</ymax>
+		</bndbox>
+	</object>
+</annotation>

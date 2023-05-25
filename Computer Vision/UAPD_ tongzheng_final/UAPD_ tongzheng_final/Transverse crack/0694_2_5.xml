@@ -1,0 +1,26 @@
+<annotation>
+	<folder>crop512_512</folder>
+	<filename>0007_2_5.JPG</filename>
+	<path>D:\UAVpic\tuoheng\padding_1\crop512_512\0007_2_5.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Transverse crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>203</xmin>
+			<ymin>318</ymin>
+			<xmax>328</xmax>
+			<ymax>360</ymax>
+		</bndbox>
+	</object>
+</annotation>

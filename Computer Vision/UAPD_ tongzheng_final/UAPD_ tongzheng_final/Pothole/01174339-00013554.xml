@@ -1,0 +1,38 @@
+<annotation>
+	<folder>test_images</folder>
+	<filename>01174339-00013554.jpg</filename>
+	<path>C:\Users\Dilan\Desktop\PHC - Asphalt Pavemen\test_images\01174339-00013554.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1024</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pothole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1620</xmin>
+			<ymin>3</ymin>
+			<xmax>1735</xmax>
+			<ymax>89</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>pothole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>356</xmin>
+			<ymin>528</ymin>
+			<xmax>449</xmax>
+			<ymax>597</ymax>
+		</bndbox>
+	</object>
+</annotation>

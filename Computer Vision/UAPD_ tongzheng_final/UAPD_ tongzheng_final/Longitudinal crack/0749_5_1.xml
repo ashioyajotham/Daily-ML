@@ -1,0 +1,38 @@
+<annotation>
+	<folder>crop512_512_2</folder>
+	<filename>0749_5_1.JPG</filename>
+	<path>D:\UAVpic\tuoheng\crop512_512_2\0749_5_1.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Longitudinal crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>423</xmin>
+			<ymin>152</ymin>
+			<xmax>463</xmax>
+			<ymax>412</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Alligator crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>428</xmin>
+			<ymin>413</ymin>
+			<xmax>461</xmax>
+			<ymax>475</ymax>
+		</bndbox>
+	</object>
+</annotation>

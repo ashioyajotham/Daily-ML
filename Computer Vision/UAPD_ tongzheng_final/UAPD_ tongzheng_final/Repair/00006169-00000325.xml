@@ -1,0 +1,38 @@
+<annotation>
+	<folder>train_1</folder>
+	<filename>00006169-00000325.jpg</filename>
+	<path>C:\Users\vojed\Documents\Python Scripts\data\train_1\00006169-00000325.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Longitudinal crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>274</xmin>
+			<ymin>7</ymin>
+			<xmax>323</xmax>
+			<ymax>456</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Repair area</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>420</xmin>
+			<ymin>350</ymin>
+			<xmax>512</xmax>
+			<ymax>389</ymax>
+		</bndbox>
+	</object>
+</annotation>

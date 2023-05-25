@@ -1,0 +1,38 @@
+<annotation>
+	<folder>vico_images</folder>
+	<filename>00037723-00001426.jpg</filename>
+	<path>/home/vico/Documents/OMDENA/project_01/vico_images/00037723-00001426.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Longitudinal crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>26</xmin>
+			<ymin>46</ymin>
+			<xmax>64</xmax>
+			<ymax>369</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Longitudinal crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>221</xmin>
+			<ymin>110</ymin>
+			<xmax>262</xmax>
+			<ymax>502</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,38 @@
+<annotation>
+	<folder>assignment</folder>
+	<filename>00180123-00009116.jpg</filename>
+	<path>D:\projects\omdena_phc_asphalt_classification\tongzheng_resized_dataset\resized_dataset\assignment\00180123-00009116.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Longitudinal crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>265</xmin>
+			<ymin>311</ymin>
+			<xmax>280</xmax>
+			<ymax>379</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Longitudinal crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>281</xmin>
+			<ymin>417</ymin>
+			<xmax>296</xmax>
+			<ymax>510</ymax>
+		</bndbox>
+	</object>
+</annotation>

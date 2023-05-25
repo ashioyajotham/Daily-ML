@@ -1,0 +1,38 @@
+<annotation>
+	<folder>vico_images</folder>
+	<filename>00036704-00001938.jpg</filename>
+	<path>/home/vico/Documents/OMDENA/project_01/vico_images/00036704-00001938.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Alligator crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>5</xmin>
+			<ymin>326</ymin>
+			<xmax>285</xmax>
+			<ymax>437</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Alligator crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>387</xmin>
+			<ymin>173</ymin>
+			<xmax>500</xmax>
+			<ymax>494</ymax>
+		</bndbox>
+	</object>
+</annotation>

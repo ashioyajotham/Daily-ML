@@ -1,0 +1,38 @@
+<annotation>
+	<folder>test_resized</folder>
+	<filename>01045351-00006740.jpg</filename>
+	<path>D:\Data Science\Omdena\Asphalt\tongzheng_resized_dataset\resized_dataset\test_resized\01045351-00006740.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Repair area</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>391</ymin>
+			<xmax>512</xmax>
+			<ymax>508</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Repair area</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>493</xmin>
+			<ymin>334</ymin>
+			<xmax>512</xmax>
+			<ymax>391</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>crop512_512</folder>
+	<filename>0125_2_7.JPG</filename>
+	<path>D:\UAVpic\uav_train\New\crop512_512\0125_2_7.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Alligator crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>25</xmin>
+			<ymin>287</ymin>
+			<xmax>473</xmax>
+			<ymax>475</ymax>
+		</bndbox>
+	</object>
+</annotation>

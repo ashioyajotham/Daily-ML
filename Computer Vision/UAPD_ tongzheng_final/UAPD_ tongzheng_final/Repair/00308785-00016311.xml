@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>00308785-00016311.jpg</filename>
+	<path>C:\Users\vojed\Documents\Python Scripts\data\validation\images\00308785-00016311.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1024</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Repair area</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>399</xmin>
+			<ymin>323</ymin>
+			<xmax>1872</xmax>
+			<ymax>638</ymax>
+		</bndbox>
+	</object>
+</annotation>

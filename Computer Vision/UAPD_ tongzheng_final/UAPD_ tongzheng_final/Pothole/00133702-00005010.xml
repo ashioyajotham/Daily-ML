@@ -1,0 +1,38 @@
+<annotation>
+	<folder>train_resized</folder>
+	<filename>00133702-00005010.jpg</filename>
+	<path>/Users/deepthivarun/Desktop/Omdena_Proj1/resized_dataset 3/train_resized/00133702-00005010.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Pothole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>151</xmin>
+			<ymin>9</ymin>
+			<xmax>180</xmax>
+			<ymax>37</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Pothole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>113</xmin>
+			<ymin>89</ymin>
+			<xmax>152</xmax>
+			<ymax>117</ymax>
+		</bndbox>
+	</object>
+</annotation>

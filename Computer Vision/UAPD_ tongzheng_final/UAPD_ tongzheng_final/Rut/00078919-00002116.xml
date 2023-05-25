@@ -1,0 +1,38 @@
+<annotation>
+	<folder>images</folder>
+	<filename>00078919-00002116.jpg</filename>
+	<path>C:\Users\vojed\Documents\Python Scripts\data\validation\images\00078919-00002116.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1024</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Rut</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>592</xmin>
+			<ymin>53</ymin>
+			<xmax>1174</xmax>
+			<ymax>971</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Lateral crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>203</xmin>
+			<ymin>732</ymin>
+			<xmax>576</xmax>
+			<ymax>842</ymax>
+		</bndbox>
+	</object>
+</annotation>

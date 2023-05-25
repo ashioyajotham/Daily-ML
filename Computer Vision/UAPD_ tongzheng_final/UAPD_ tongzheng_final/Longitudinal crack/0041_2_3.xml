@@ -1,0 +1,26 @@
+<annotation>
+	<folder>crop512_512</folder>
+	<filename>0041_2_3.JPG</filename>
+	<path>D:\UAVpic\uav_train\New\crop512_512\0041_2_3.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Longitudinal crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>449</xmin>
+			<ymin>164</ymin>
+			<xmax>474</xmax>
+			<ymax>385</ymax>
+		</bndbox>
+	</object>
+</annotation>

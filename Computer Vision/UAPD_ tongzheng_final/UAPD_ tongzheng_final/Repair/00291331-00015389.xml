@@ -1,0 +1,26 @@
+<annotation>
+	<folder>kausthab_train_resized</folder>
+	<filename>00291331-00015389.jpg</filename>
+	<path>C:\Users\KAUSTHAB DUTTA\Documents\Omdena Projects\NigeriaChapter_Road Asphalt\image labelling\tongzheng_resized_dataset (1)\resized_dataset\kausthab_train_resized\00291331-00015389.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Repair area</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>3</xmin>
+			<ymin>113</ymin>
+			<xmax>392</xmax>
+			<ymax>263</ymax>
+		</bndbox>
+	</object>
+</annotation>

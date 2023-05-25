@@ -1,0 +1,38 @@
+<annotation>
+	<folder>vico_images</folder>
+	<filename>00074224-00003636.jpg</filename>
+	<path>/home/vico/Documents/OMDENA/project_01/vico_images/00074224-00003636.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Repair area</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>109</xmin>
+			<ymin>139</ymin>
+			<xmax>142</xmax>
+			<ymax>206</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Pothole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>85</xmin>
+			<ymin>146</ymin>
+			<xmax>105</xmax>
+			<ymax>172</ymax>
+		</bndbox>
+	</object>
+</annotation>

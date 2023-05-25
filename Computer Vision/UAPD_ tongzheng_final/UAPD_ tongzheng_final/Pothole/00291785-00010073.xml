@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>00291785-00010073.jpg</filename>
+	<path>C:\Users\vojed\Documents\Python Scripts\data\validation\images\00291785-00010073.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1024</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Pothole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1209</xmin>
+			<ymin>394</ymin>
+			<xmax>1280</xmax>
+			<ymax>486</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,38 @@
+<annotation>
+	<folder>1</folder>
+	<filename>1001_5_5.JPG</filename>
+	<path>F:\FasterRcnn\faster-rcnn-keras-master\master\VOCdevkit\VOC2007\1\UAPD补充\1\1001_5_5.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Repair</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>1</ymin>
+			<xmax>228</xmax>
+			<ymax>177</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Transverse crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>178</xmin>
+			<ymin>182</ymin>
+			<xmax>208</xmax>
+			<ymax>278</ymax>
+		</bndbox>
+	</object>
+</annotation>

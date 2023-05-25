@@ -1,0 +1,38 @@
+<annotation>
+	<folder>test_images</folder>
+	<filename>01253713-00017747.jpg</filename>
+	<path>C:\Users\Dilan\Desktop\PHC - Asphalt Pavemen\test_images\01253713-00017747.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1024</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>repair_area</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>70</xmin>
+			<ymin>1</ymin>
+			<xmax>383</xmax>
+			<ymax>1020</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>repair_area</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1847</xmin>
+			<ymin>14</ymin>
+			<xmax>2010</xmax>
+			<ymax>1012</ymax>
+		</bndbox>
+	</object>
+</annotation>

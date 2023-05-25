@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train_resized</folder>
+	<filename>00170131-00000145.jpg</filename>
+	<path>/Users/deepthivarun/Desktop/Omdena_Proj1/resized_dataset 3/train_resized/00170131-00000145.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Alligator crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>255</xmin>
+			<ymin>236</ymin>
+			<xmax>399</xmax>
+			<ymax>385</ymax>
+		</bndbox>
+	</object>
+</annotation>

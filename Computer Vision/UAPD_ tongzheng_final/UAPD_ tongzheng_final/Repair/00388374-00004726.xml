@@ -1,0 +1,26 @@
+<annotation>
+	<folder>test_resized</folder>
+	<filename>00388374-00004726.jpg</filename>
+	<path>D:\Omdena\data\resized_dataset\test_resized\00388374-00004726.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Repair area</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>338</xmin>
+			<ymin>76</ymin>
+			<xmax>470</xmax>
+			<ymax>498</ymax>
+		</bndbox>
+	</object>
+</annotation>

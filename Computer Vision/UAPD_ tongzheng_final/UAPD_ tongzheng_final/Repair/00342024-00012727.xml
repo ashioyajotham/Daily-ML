@@ -1,0 +1,38 @@
+<annotation>
+	<folder>Afroza</folder>
+	<filename>00342024-00012727.jpg</filename>
+	<path>/home/senjuti/Omdena_Asphalt/Afroza/00342024-00012727.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Repair area</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>19</xmin>
+			<ymin>11</ymin>
+			<xmax>78</xmax>
+			<ymax>289</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Repair area</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>91</xmin>
+			<ymin>10</ymin>
+			<xmax>149</xmax>
+			<ymax>497</ymax>
+		</bndbox>
+	</object>
+</annotation>

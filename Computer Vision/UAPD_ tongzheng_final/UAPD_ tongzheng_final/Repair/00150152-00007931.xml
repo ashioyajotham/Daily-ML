@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train_resized</folder>
+	<filename>00150152-00007931.jpg</filename>
+	<path>/Users/deepthivarun/Desktop/Omdena_Proj1/resized_dataset 3/train_resized/00150152-00007931.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Repair area</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>11</xmin>
+			<ymin>184</ymin>
+			<xmax>512</xmax>
+			<ymax>289</ymax>
+		</bndbox>
+	</object>
+</annotation>

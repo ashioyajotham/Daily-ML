@@ -1,0 +1,26 @@
+<annotation>
+	<folder>crop512_512</folder>
+	<filename>0182_3_3.JPG</filename>
+	<path>D:\UAVpic\uav_train\New\crop512_512\0182_3_3.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Pothole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>395</xmin>
+			<ymin>25</ymin>
+			<xmax>427</xmax>
+			<ymax>74</ymax>
+		</bndbox>
+	</object>
+</annotation>

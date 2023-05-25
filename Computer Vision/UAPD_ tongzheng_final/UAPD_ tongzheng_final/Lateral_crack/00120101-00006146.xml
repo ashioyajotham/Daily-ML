@@ -1,0 +1,26 @@
+<annotation>
+	<folder>test_resized</folder>
+	<filename>00120101-00006146.jpg</filename>
+	<path>D:\Omdena\data\resized_dataset\test_resized\00120101-00006146.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Lateral crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>88</xmin>
+			<ymin>433</ymin>
+			<xmax>135</xmax>
+			<ymax>462</ymax>
+		</bndbox>
+	</object>
+</annotation>

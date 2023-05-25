@@ -1,0 +1,26 @@
+<annotation>
+	<folder>crop512_512</folder>
+	<filename>1172_1_7.JPG</filename>
+	<path>F:\paper_writing\毕业论文\实测亮度调整\new\crop512_512\1172_1_7.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Repair</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>47</xmin>
+			<ymin>69</ymin>
+			<xmax>161</xmax>
+			<ymax>511</ymax>
+		</bndbox>
+	</object>
+</annotation>

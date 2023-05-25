@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>00286242-00003788.jpg</filename>
+	<path>C:\Users\vojed\Documents\Python Scripts\data\validation\images\00286242-00003788.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1024</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Rut</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>92</xmin>
+			<ymin>40</ymin>
+			<xmax>601</xmax>
+			<ymax>971</ymax>
+		</bndbox>
+	</object>
+</annotation>

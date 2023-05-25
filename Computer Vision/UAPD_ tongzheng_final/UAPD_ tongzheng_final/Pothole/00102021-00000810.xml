@@ -1,0 +1,26 @@
+<annotation>
+	<folder>vico_images</folder>
+	<filename>00102021-00000810.jpg</filename>
+	<path>/home/vico/Documents/OMDENA/project_01/vico_images/00102021-00000810.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Pothole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>375</xmin>
+			<ymin>83</ymin>
+			<xmax>397</xmax>
+			<ymax>114</ymax>
+		</bndbox>
+	</object>
+</annotation>

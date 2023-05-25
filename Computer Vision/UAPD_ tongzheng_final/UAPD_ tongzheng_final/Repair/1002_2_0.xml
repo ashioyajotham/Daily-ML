@@ -1,0 +1,26 @@
+<annotation>
+	<folder>1</folder>
+	<filename>1002_2_0.JPG</filename>
+	<path>F:\FasterRcnn\faster-rcnn-keras-master\master\VOCdevkit\VOC2007\1\UAPD补充\1\1002_2_0.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Repair</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>327</xmin>
+			<ymin>428</ymin>
+			<xmax>429</xmax>
+			<ymax>502</ymax>
+		</bndbox>
+	</object>
+</annotation>

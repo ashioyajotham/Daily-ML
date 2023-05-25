@@ -1,0 +1,26 @@
+<annotation>
+	<folder>test_resized</folder>
+	<filename>00357305-00007542.jpg</filename>
+	<path>D:\Omdena\data\resized_dataset\test_resized\00357305-00007542.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Pothole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>231</xmin>
+			<ymin>365</ymin>
+			<xmax>339</xmax>
+			<ymax>486</ymax>
+		</bndbox>
+	</object>
+</annotation>

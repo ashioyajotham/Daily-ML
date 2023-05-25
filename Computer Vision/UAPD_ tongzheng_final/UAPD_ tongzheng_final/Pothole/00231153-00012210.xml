@@ -1,0 +1,26 @@
+<annotation>
+	<folder>assignment</folder>
+	<filename>00231153-00012210.jpg</filename>
+	<path>D:\projects\omdena_phc_asphalt_classification\tongzheng_resized_dataset\resized_dataset\assignment\00231153-00012210.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Pothole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>202</xmin>
+			<ymin>56</ymin>
+			<xmax>234</xmax>
+			<ymax>100</ymax>
+		</bndbox>
+	</object>
+</annotation>

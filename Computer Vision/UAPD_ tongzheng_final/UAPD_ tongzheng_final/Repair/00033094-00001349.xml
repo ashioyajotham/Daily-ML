@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train_1</folder>
+	<filename>00033094-00001349.jpg</filename>
+	<path>C:\Users\vojed\Documents\Python Scripts\data\train_1\00033094-00001349.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Repair area</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>303</xmin>
+			<ymin>310</ymin>
+			<xmax>417</xmax>
+			<ymax>500</ymax>
+		</bndbox>
+	</object>
+</annotation>

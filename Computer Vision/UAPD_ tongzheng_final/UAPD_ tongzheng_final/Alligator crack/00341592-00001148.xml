@@ -1,0 +1,26 @@
+<annotation>
+	<folder>test_resized</folder>
+	<filename>00341592-00001148.jpg</filename>
+	<path>D:\Omdena\data\resized_dataset\test_resized\00341592-00001148.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Alligator crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>247</xmin>
+			<ymin>272</ymin>
+			<xmax>468</xmax>
+			<ymax>414</ymax>
+		</bndbox>
+	</object>
+</annotation>

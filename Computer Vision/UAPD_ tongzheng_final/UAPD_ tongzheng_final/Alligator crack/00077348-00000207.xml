@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>00077348-00000207.jpg</filename>
+	<path>C:\Users\vojed\Documents\Python Scripts\data\validation\images\00077348-00000207.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1024</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Alligator crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>55</xmin>
+			<ymin>46</ymin>
+			<xmax>401</xmax>
+			<ymax>1011</ymax>
+		</bndbox>
+	</object>
+</annotation>

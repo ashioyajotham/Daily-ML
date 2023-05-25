@@ -1,0 +1,26 @@
+<annotation>
+	<folder>crop512_512</folder>
+	<filename>0007_1_2.JPG</filename>
+	<path>D:\UAVpic\tuoheng\crop512_512\0007_1_2.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Pothole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>192</xmin>
+			<ymin>173</ymin>
+			<xmax>257</xmax>
+			<ymax>230</ymax>
+		</bndbox>
+	</object>
+</annotation>

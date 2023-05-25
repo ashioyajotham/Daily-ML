@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train_1</folder>
+	<filename>00024438-00001006.jpg</filename>
+	<path>C:\Users\vojed\Documents\Python Scripts\data\train_1\00024438-00001006.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Lateral crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>316</xmin>
+			<ymin>32</ymin>
+			<xmax>509</xmax>
+			<ymax>81</ymax>
+		</bndbox>
+	</object>
+</annotation>

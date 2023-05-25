@@ -1,0 +1,26 @@
+<annotation>
+	<folder>assignment</folder>
+	<filename>00182331-00004291.jpg</filename>
+	<path>D:\projects\omdena_phc_asphalt_classification\tongzheng_resized_dataset\resized_dataset\assignment\00182331-00004291.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Rut</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>133</xmin>
+			<ymin>3</ymin>
+			<xmax>287</xmax>
+			<ymax>105</ymax>
+		</bndbox>
+	</object>
+</annotation>

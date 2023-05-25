@@ -1,0 +1,26 @@
+<annotation>
+	<folder>crop512_512</folder>
+	<filename>0037_0_4.JPG</filename>
+	<path>D:\UAVpic\tuoheng\crop512_512\0037_0_4.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Repair</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>371</xmin>
+			<ymin>380</ymin>
+			<xmax>503</xmax>
+			<ymax>479</ymax>
+		</bndbox>
+	</object>
+</annotation>

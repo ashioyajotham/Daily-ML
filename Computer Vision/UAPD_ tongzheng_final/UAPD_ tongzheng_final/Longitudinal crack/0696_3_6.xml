@@ -1,0 +1,26 @@
+<annotation>
+	<folder>crop512_512</folder>
+	<filename>0009_3_6.JPG</filename>
+	<path>D:\UAVpic\tuoheng\padding_1\crop512_512\0009_3_6.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Longitudinal crack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>169</xmin>
+			<ymin>205</ymin>
+			<xmax>191</xmax>
+			<ymax>307</ymax>
+		</bndbox>
+	</object>
+</annotation>

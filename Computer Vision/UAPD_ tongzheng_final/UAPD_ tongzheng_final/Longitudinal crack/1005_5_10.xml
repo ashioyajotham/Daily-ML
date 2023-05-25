@@ -1,0 +1,26 @@
+<annotation>
+	<folder>1</folder>
+	<filename>1005_5_10.JPG</filename>
+	<path>F:\FasterRcnn\faster-rcnn-keras-master\master\VOCdevkit\VOC2007\1\UAPD补充\1\1005_5_10.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Longitudinal crack</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>179</ymin>
+			<xmax>407</xmax>
+			<ymax>215</ymax>
+		</bndbox>
+	</object>
+</annotation>
