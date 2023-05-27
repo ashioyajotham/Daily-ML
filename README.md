@@ -50,3 +50,11 @@ CC: [inria Machine learning in Python with scikit-learn](https://inria.github.io
 
 # [Titanic](https://github.com/ashioyajotham/ML-Algorithms/blob/main/titanic-classification.ipynb)
 * Of course it can't be complete without the "hello world" of machine learning. Here we look at `Random Classifiers` and `Logistic Regression`
+
+
+
+# Linear Regression
+*  linear regression was developed in the field of statistics and is studied as a model for understanding the relationship between input and output numerical variables, but has been borrowed by machine learning. It is both a statistical algorithm and a machine learning algorithm.
+*  Linear regression is a linear model, e.g. a model that assumes a linear relationship between the input variables (x) and the single output variable (y). More specifically, that y can be calculated from a linear combination of the input variables (x).
+*  When there is a single input variable (x), the method is referred to as simple linear regression. When there are multiple input variables, literature from statistics often refers to the method as multiple linear regression.
+*  Different techniques can be used to prepare or train the linear regression equation from data, the most common of which is called Ordinary Least Squares. It is common to therefore refer to a model prepared this way as [Ordinary Least Squares Linear Regression or just Least Squares Regression](https://github.com/ashioyajotham/Daily-ML/blob/main/ols-models.ipynb).
