@@ -1,0 +1,24 @@
+Contract file:
+ID: Unique contract id 
+RegistrationDate: Registration Date
+Deposit: amount paid upfront by customer
+Upsell Date: if upsell date of the upsell
+Accessory rate: Rate per Unit for an Upsell
+Payment Method: indicates if the contract is financed or a cash sale
+rateTypeEntity: payment frequency (daily or monthly)
+RatePerUnit: Amount needed to generate a token for a minimum credit period specified by the rate type
+DaysOnDeposit: Number of days credited with the deposit payment
+MainApplicantGender : Gender of the applicant
+Age : Region of the applicant
+Region : Region of the applicant
+Town : Town of the applicant
+Occupation : occupation of the applicant
+Term : Expected contract duration (in days)
+TotalContractValue : Contract value 
+ExpectedTermDate : Expected contract term date
+FirstPaymentDate : date of the first registered payment
+LastPaymentDate : date of the last registered payment 
+SupplierName : Name of the supplier
+TransactionDates: Transaction date (following the format 'month-year')           
+PaymentsHistory: history of payments for that contract
+m1-m6 : targets (next six payments to predict)
