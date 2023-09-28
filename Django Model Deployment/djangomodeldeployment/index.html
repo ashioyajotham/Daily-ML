@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kenya World Bank Data (2013-2022)</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="jumbotron">
+        <h2 class="text-center">Kenya World Bank Data (2013-2022)</h2>
+    </div>
+</div>
+
+<div class="container">
+
+    <form action="{% url 'predict' %}" method="post">
+
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="year">Year</label>
+            <input type="text" class="form-control" id="year" name="year" placeholder="Enter Year">
+        </div>
+        <div class="form-group">
+            <label for="co2">CO2 emissions (metric tons per capita)</label>
+            <input type="text" class="form-control" id="co2" name="co2" placeholder="Enter CO2 emissions (metric tons per capita)">
+        </div>
+        <div class="form-group">
+            <label for="school_enrollment_primary">School enrollment, primary (% gross)</label>
+            <input type="text" class="form-control" id="school_enrollment_primary" name="school_enrollment_primary" placeholder="Enter School enrollment, primary (% gross)">
+        </div>
+        <div class="form-group">
+            <label for="school_enrollment_secondary">School enrollment, secondary (% gross)</label>
+            <input type="text" class="form-control" id="school_enrollment_secondary" name="school_enrollment_secondary" placeholder="Enter School enrollment, secondary (% gross)">
+        </div>
+        <div class="form-group">
+            <label for="electric_power_consumption">Electric power consumption (kWh per capita)</label>
+            <input type="text" class="form-control" id="electric_power_consumption" name="electric_power_consumption" placeholder="Enter Electric power consumption (kWh per capita)">
+        </div>
+        <button type="submit" class="btn btn-primary">Predict</button>
+    </form>
+    
+        {% if prediction %}
+        <div class="form-group">
+            <label for="prediction">Prediction</label>
+            <input type="text" class="form-control" id="prediction" name="prediction" value="{{ prediction }}">
+        </div>
+        {% endif %}
