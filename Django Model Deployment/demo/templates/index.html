@@ -9,5 +9,11 @@
 <body>
     <h1>My Django Project</h1>
     <p>It worked!</p>
+    <hr>
+    <form action="user">
+        {% csrf_token %}
+        Enter your name <input type="text" name="name"><br>
+        <input type="submit" value="Say Hello">
+    </form>
 </body>
 </html>

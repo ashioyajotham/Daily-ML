@@ -19,3 +19,8 @@ from django.shortcuts import render
 
 def Welcome(request):
     return render(request, "index.html")
+
+def User(request):
+    name = request.GET['name']
+    print(name)
+    return render(request, "user.html", {'name': name})
