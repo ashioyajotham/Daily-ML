@@ -11,6 +11,11 @@
 # Django follows MVT architecture. It is a variation of MVC architecture.
 # In MVT, the controller is replaced by the template.
 
-from django.http import HttpResponse
+#from django.http import HttpResponse
+from django.shortcuts import render
+
+#def Welcome(request):
+    #return HttpResponse("<h1>Welcome to Django</h1>")
+
 def Welcome(request):
-    return HttpResponse("<h1>Welcome to Django</h1>")
+    return render(request, "index.html")
