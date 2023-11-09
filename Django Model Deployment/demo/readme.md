@@ -64,13 +64,8 @@ project_name
 * `http://localhost:8000/` (or whatever port you are using)
 
 ## Preview
-<<<<<<< HEAD
-![Preview 1](prev_1.png)
-![Preview 2](prev_2.png)
-=======
 ![Preview 1](https://github.com/ashioyajotham/Daily-ML/blob/main/Django%20Model%20Deployment/demo/prev_1.jpeg)
 ![Preview 2](https://github.com/ashioyajotham/Daily-ML/blob/main/Django%20Model%20Deployment/demo/prev_2.jpeg)
->>>>>>> 93af10bd90d570c28db18b4994968f341e5c4fd5
 
 
 
