@@ -68,7 +68,6 @@ project_name
 ![Preview 2](https://github.com/ashioyajotham/Daily-ML/blob/main/Django%20Model%20Deployment/demo/prev_2.jpeg)
 
 
-
 ## Important Notes
 * The `iris` folder is the app
 * The `demo` folder is the project
@@ -83,3 +82,6 @@ project_name
 
 ## Credits
 * [Django Tutorial (Youtube)](https://youtu.be/rNhVBv0i4os?si=AGvOBy4oOw5GxpUm)
+
+## QR Code
+![QR Code](https://github.com/ashioyajotham/Daily-ML/blob/main/Django%20Model%20Deployment/demo/frame.png)
