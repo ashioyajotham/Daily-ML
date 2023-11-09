@@ -2,7 +2,7 @@
 * This is a simple project that deploys an iris flower classification app.
 
 ## Architecture Explanation
-- A typical Django project has the following structure
+- A typical Django project has the following structure:
 ```
 project_name
 ├── project_name
@@ -49,10 +49,6 @@ project_name
 * The templates are defined in `iris/templates/iris`
 * The templates are then rendered in the views
 
-
-
-
-
 ## Usage
 1. Create a virtual environment (optional)
 * `python3 -m venv venv`
@@ -66,6 +62,11 @@ project_name
 
 4. Go to the browser and type the url
 * `http://localhost:8000/` (or whatever port you are using)
+
+## Preview
+![preview](prev_1.png)
+![preview](prev_2.png)
+
 
 
 ## Important Notes
