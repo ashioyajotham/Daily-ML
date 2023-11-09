@@ -64,8 +64,8 @@ project_name
 * `http://localhost:8000/` (or whatever port you are using)
 
 ## Preview
-![preview](prev_1.png)
-![preview](prev_2.png)
+![Preview 1](prev_1.png)
+![Preview 2](prev_2.png)
 
 
 
