@@ -1,5 +1,5 @@
 # Django for model deployment 
-* This is a simple project that deploys an iris flower classificatio app
+* This is a simple project that deploys an iris flower classification app.
 
 ## Architecture Explanation
 - A typical Django project has the following structure
@@ -66,3 +66,22 @@ project_name
 
 4. Go to the browser and type the url
 * `http://localhost:8000/` (or whatever port you are using)
+
+
+## Important Notes
+* The `iris` folder is the app
+* The `demo` folder is the project
+* The `iris` folder is inside the `demo` folder
+* The `iris` folder is the app that is created using `python manage.py startapp iris`
+* The `demo` folder is the project that is created using `django-admin startproject demo`
+
+## References
+* [Django Documentation](https://docs.djangoproject.com/en/3.1/)
+* [Django Tutorial](https://docs.djangoproject.com/en/3.1/intro/tutorial01/)
+* [Django Tutorial (Youtube)](https://youtu.be/rNhVBv0i4os?si=AGvOBy4oOw5GxpUm)
+
+## Credits
+* [Django Tutorial (Youtube)](https://youtu.be/rNhVBv0i4os?si=AGvOBy4oOw5GxpUm)
+
+## License
+* [MIT License]
