@@ -65,7 +65,7 @@ project_name
 
 ## Preview
 ![Preview 1](https://github.com/ashioyajotham/Daily-ML/blob/main/Django%20Model%20Deployment/demo/prev_1.jpeg)
-![Preview 2](https://github.com/ashioyajotham/Daily-ML/blob/main/Django%20Model%20Deployment/demo/prev_1.jpeg)
+![Preview 2](https://github.com/ashioyajotham/Daily-ML/blob/main/Django%20Model%20Deployment/demo/prev_2.jpeg)
 
 
 
