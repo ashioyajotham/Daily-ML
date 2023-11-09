@@ -76,12 +76,9 @@ project_name
 * The `demo` folder is the project that is created using `django-admin startproject demo`
 
 ## References
-* [Django Documentation](https://docs.djangoproject.com/en/3.1/)
-* [Django Tutorial](https://docs.djangoproject.com/en/3.1/intro/tutorial01/)
+* [Django Documentation](https://docs.djangoproject.com/en/4.2/)
+* [Django Tutorial](https://docs.djangoproject.com/en/4.2/intro/tutorial01/)
 * [Django Tutorial (Youtube)](https://youtu.be/rNhVBv0i4os?si=AGvOBy4oOw5GxpUm)
 
 ## Credits
 * [Django Tutorial (Youtube)](https://youtu.be/rNhVBv0i4os?si=AGvOBy4oOw5GxpUm)
-
-## License
-* [MIT License]
