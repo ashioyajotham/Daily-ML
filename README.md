@@ -1,28 +1,9 @@
-* General machine learning practices
-
-# [Machine Learning Scripting](https://github.com/ashioyajotham/ML-Algorithms/blob/main/ML%20Scripting.ipynb)
-* For our first file, we use the `IRIS` dataset, considered as the "hello world" of machine learning to classify flowers in Python through the command-line.
-  It is basically similar to using Jupyter notebooks but slightly different in syntax and easier.
-* The machine learning algorithms include:
-         - `Support Vector Machine (SVM)`
-         - `KNeighbors Classifier (KNN)`
-         - `Decision Tree Classifier (CART)`
-         - `Linear Discriminant Analysis (LDA)`
-         - `Logistic Regression (LR)`
-         - `Gaussian Naive Bayes (NB)`
-        
- * The evaluation metrics include:
-         - `Accuracy Score`
-         - `Confusion Matrix`
-         - `Classification Report`
-
-* Model generalization performance:
-         - `StratifiedKFold`
+# My general machine learning best practices
+![image](https://github.com/ashioyajotham/Daily-ML/assets/71454095/8a56b7e4-0e1d-48d4-a2ec-02cdf239441e)
+* Jason Brownlee on [Variance](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/)
 
 
-
-
-# [Modelling Non-Linear Features-Target Relationship](https://github.com/ashioyajotham/ML-Algorithms/blob/main/linear-regression-non-linear-btn-data-and-target.ipynb)
+## [Modelling Non-Linear Features-Target Relationship](https://github.com/ashioyajotham/ML-Algorithms/blob/main/linear-regression-non-linear-btn-data-and-target.ipynb)
 * Linear regression with non-linear link between data and target
 * The deployment of scikit-learn in linear models in this case, Linear Regression
 * Machine learning modelling alogorithms:
