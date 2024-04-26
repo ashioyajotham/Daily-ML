@@ -1,4 +1,6 @@
 # My general machine learning best practices
+![image](https://github.com/ashioyajotham/Daily-ML/assets/71454095/4666872d-4626-4066-be86-bdfd554eccbf)
+
 ![image](https://github.com/ashioyajotham/Daily-ML/assets/71454095/8a56b7e4-0e1d-48d4-a2ec-02cdf239441e)
 * Jason Brownlee on [Variance](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/)
 
