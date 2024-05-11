@@ -4,6 +4,9 @@
 ![image](https://github.com/ashioyajotham/Daily-ML/assets/71454095/8a56b7e4-0e1d-48d4-a2ec-02cdf239441e)
 * Jason Brownlee on [Variance](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/)
 
+  ![image](https://github.com/ashioyajotham/Daily-ML/assets/71454095/7b129bf8-24d6-4fbe-8d38-faabe772c2d9)
+
+
 
 ## [Modelling Non-Linear Features-Target Relationship](https://github.com/ashioyajotham/ML-Algorithms/blob/main/linear-regression-non-linear-btn-data-and-target.ipynb)
 * Linear regression with non-linear link between data and target
