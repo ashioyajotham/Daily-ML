@@ -1,163 +1,175 @@
 import numpy as np
-import torch
-import os
-from embed import get_embedding
-
+from my_embed import get_embedding
 def softmax(scores):
     """
-    Apply softmax to normalize attention scores
+    Apply softmax to normalize attention scores.
 
     Args:
-    scores(np.ndarray): Attention scores
+        scores (np.ndarray): Attention scores.
 
     Returns:
-    np.ndarray: Normalized attention scores
+        np.ndarray: Normalized attention scores.
     """
-    exp_scores = np.exp(scores, axis = 1, keepdims = True) # numerical stability and normalizes across each row (ie across all key vectors for each query vector)
-    # keepdims = True to keep the dimension of the original array so that we can broadcast it
-    return exp_scores / np.sum(exp_scores)
+    exp_scores = np.exp(scores - np.max(scores, axis=-1, keepdims=True))  # numerical stability, and normalizes across each row (i.e. across all key vectors for each query)
+    return exp_scores / np.sum(exp_scores, axis=-1, keepdims=True)
 
-class SelfAttention: # It is the layer that computes the attention scores between the query and key vectors and then applies the attention scores to the value vectors to get the output
+
+
+class SelfAttention:
     """
-    Self Attention mechanism to compute attention scores
+    Self-Attention mechanism to compute attention scores and apply them to value vectors.
+
     Attributes:
-    embed_dim(int): Embedding dimension
-    W_q(np.ndarray): Weight matrix for query # query is the vector that we want to compare to all the keys
-    W_k(np.ndarray): Weight matrix for key # key is the vector that we want to compare to the query
-    W_v(np.ndarray): Weight matrix for value # value is the vector that we want to output
+        embedding_dim (int): Dimension of the embeddings.
+        W_q (np.ndarray): Weight matrix for the Query.
+        W_k (np.ndarray): Weight matrix for the Key.
+        W_v (np.ndarray): Weight matrix for the Value.
     """
 
     def __init__(self, embedding_dim):
         """
-        Initialize the SelfAttention mechanism
+        Initialize the SelfAttention mechanism.
+
         Args:
-            embed_dim(int): Embedding dimension
+            embedding_dim (int): Dimension of the embeddings.
         """
         self.embedding_dim = embedding_dim
 
-        # Initialize the weight matrices with small random numbers from a normal distribution
+        # Initialize weight matrices (with small random values)
         self.W_q = np.random.randn(embedding_dim, embedding_dim) * np.sqrt(1. / embedding_dim)
         self.W_k = np.random.randn(embedding_dim, embedding_dim) * np.sqrt(1. / embedding_dim)
         self.W_v = np.random.randn(embedding_dim, embedding_dim) * np.sqrt(1. / embedding_dim)
 
-    def forward(self, emdeddings, mask = None):
+    def forward(self, embeddings, mask=None):
         """
-        Forward pass through the self attention mechanism to compute attention scores
-        Args:
-            embeddings(np.ndarray): Input embeddings
-            mask(np.ndarray, optional): Mask to be applied to the attention scores to avoid attending to certain elements
-        Returns:
-            np.ndarray: Attention scores (output after applying attention scores to the values)
-        """
-        query = np.dot(emdeddings, self.W_q)
-        key = np.dot(emdeddings, self.W_k)
-        values = np.dot(emdeddings, self.W_v)
+        Forward pass through the Self-Attention mechanism.
 
-        # Compute the attention scores
-        attention_scores = np.calculate_attention_scores(query, key)
+        Args:
+            embeddings (np.ndarray): Input embeddings.
+            mask (np.ndarray, optional): Mask to be applied to attention scores.
+
+        Returns:
+            np.ndarray: Output after applying attention to value vectors.
+        """
+        query = np.dot(embeddings, self.W_q)
+        key = np.dot(embeddings, self.W_k)
+        values = np.dot(embeddings, self.W_v)
+
+        # Calculate attention scores
+        attention_scores = self.calculate_attention_score(query, key)
 
         # Masking
         if mask is not None:
-            attention_scores = np.where(mask==0, -1e9, attention_scores) # if mask is 0, then set the attention score to -1e9
-            # if mask is 1, then keep the attention score as it is
+            attention_scores = np.where(mask == 0, -1e9, attention_scores)      # where mask is 0, turns to -infinity. where mask is 1, keeps original values
 
-        # Apply softmax to normalize the attention scores
+        # Apply softmax to attention scores
         attention_weights = softmax(attention_scores)
-        output = self.values_weighted_sum(values, attention_weights)
+
+        # Compute weighted sum of value vectors
+        output = self.values_weighted_sum(attention_weights, values)
+
         return output
-    
+
     def calculate_attention_score(self, query, key):
         """
-        Calculate attention scores based on the query and key matrices
+        Calculate the attention scores based on the Query and Key matrices.
+
         Args:
-            query(np.ndarray): Query matrix
-            key(np.ndarray): Key matrix
+            query (np.ndarray): Query matrix.
+            key (np.ndarray): Key matrix.
+
         Returns:
-            np.ndarray: Attention scores
+            np.ndarray: Attention scores.
         """
-        d_k = query.shape[-1] # scaling factor to ensure that not too large values are fed to the softmax function as it would result in numerical instability 
-                            # (would push softmax into regions where the gradients are very small)
-        dot = np.dot(query, key.T) # key.T is the transpose of the key matrix
-                                # flipping the matrix over its diagonal,such that the row and column indices are switched
-        return dot / np.sqrt(d_k) # scale by the square root of the key dimension
+        d_k = key.shape[-1]     # scaling factor to ensure no too large values are fed to softmax (would push softmax into regions where it has extremely small gradients)
+        dot = np.dot(query, key.T) # key.T : transpose of the key matrix 
+                                    # i.e. flipping the matrix over its diagonal, so that the rows become columns and the colums become rows
+        return dot / np.sqrt(d_k)  # scale by the square root of the key dimension
     
     def values_weighted_sum(self, weights, values):
         """
-        Weighted sum of values based on the attention weights
+        Calculate the weighted sum of value vectors based on attention weights.
+
         Args:
-            weights(np.ndarray): Attention weights
-            values(np.ndarray): Values to be weighted
+            weights (np.ndarray): Attention weights.
+            values (np.ndarray): Value vectors.
+
         Returns:
-            np.ndarray: Weighted sum of values
+            np.ndarray: Weighted sum of value vectors.
         """
         return np.dot(weights, values)
-    
-class MultiHeadAttention: # It is the layer that splits the input embeddings into multiple heads, applies the self attention mechanism to each head, concatenates the heads, and applies the output weight matrix to get the output
+
+class MultiHeadAttention:
     """
-    Multi-head attention mechanism consisting of multiple self attention heads
+    Multi-Head Attention mechanism consisting of multiple self-attention heads.
+
     Attributes:
-    head_dim(int): Dimension of each attention head
-    attention_heads(list): list of self attention heads
-    W_o(np.ndarray): Weight matrix for output
+        head_dim (int): Dimension of each attention head.
+        attention_heads (list): List of SelfAttention instances.
+        W_o (np.ndarray): Final transformation matrix.
     """
 
     def __init__(self, embedding_dim, num_heads):
         """
-        Initialize the MultiHeadAttention mechanism
+        Initialize the MultiHeadAttention mechanism.
+
         Args:
-            embed_dim(int): Embedding dimension
-            num_heads(int): Number of attention heads
-        
+            embedding_dim (int): Dimension of the embeddings.
+            num_heads (int): Number of attention heads.
+
         Raises:
-            ValueError: If the embedding dimension is not divisible by the number of heads
+            ValueError: If embedding_dim is not divisible by num_heads.
         """
-        # embedding_dim must be divisible by num_heads
-        # otherwise, the context window will be different for each head ie inconsistent context window
+        # `embedding_dim` must be divisible by `num_heads`
+            # otherwise, the context window will not be consistent (i.e. the input of each head will be different sizes)
         if embedding_dim % num_heads != 0:
-            raise ValueError("Embedding dimension must be divisible by the number of heads")
+            raise ValueError("embedding_dim must be divisible by num_heads")
         
-        # compute the dimension of each head
+        # Calculate dimension of each head
         self.head_dim = embedding_dim // num_heads
-
-        # Initialize the attention heads (instances of the SelfAttention class)
+        
+        # Initialize heads (instances of self attention class)
         self.attention_heads = [SelfAttention(self.head_dim) for _ in range(num_heads)]
-
-        # Initialize the output weight matrix
-        self.W_o = np.random.randn(embedding_dim, embedding_dim)
+        
+        # Final transformation matrix (transform the concatenated outputs back to the original embedding dimension)
+        self.W_o = np.random.rand(embedding_dim, embedding_dim)
 
     def forward(self, embeddings):
         """
-        Forward pass through the multi-head attention mechanism to compute attention scores
+        Forward pass through the Multi-Head Attention mechanism.
+
         Args:
-            embeddings(np.ndarray): Input embeddings
+            embeddings (np.ndarray): Input embeddings.
 
         Returns:
-            np.ndarray: Attention scores (output after applying attention scores to the values)
+            np.ndarray: Output after applying multi-head attention and final transformation.
         """
         # Split the embeddings into multiple heads
         sequence_length, embedding_dim = embeddings.shape
-        split_embeddings = np.reshape(embeddings, (sequence_length, -1, self.head_dim))
+        split_embeddings = np.reshape(embeddings, (sequence_length, len(self.attention_heads), self.head_dim))
 
         head_outputs = []
         for i, head in enumerate(self.attention_heads):
-            head_output = head.forward[:, i, :]
+            head_output = head.forward(split_embeddings[:, i, :])
             head_outputs.append(head_output)
-
-        # Concatenate the heads
-        concatenated_output = np.concatenate(head_outputs, axis = -1)
-
-        # Apply the output weight matrix
-        output = self.linear_transform(concatenated_output, self.W_o)
-
+        
+        # Concatenate outputs of all heads along the last axis
+        concatenated_output = np.concatenate(head_outputs, axis=-1)
+        
+        # Apply final linear transformation
+        output = self.linear_transformation(concatenated_output, self.W_o)
+        
         return output
 
     def linear_transformation(self, concatenated_output, weight_matrix):
         """
-        Apply linear transformation to the concatenated output
+        Apply a linear transformation to the concatenated output.
+
         Args:
-            concatenated_output(np.ndarray): Concatenated output of the attention heads
-            weight_matrix(np.ndarray): Weight matrix for output
+            concatenated_output (np.ndarray): Concatenated output from attention heads.
+            weight_matrix (np.ndarray): Weight matrix for final transformation.
+
         Returns:
-            np.ndarray: Output after applying the linear transformation
+            np.ndarray: Transformed output.
         """
         return np.dot(concatenated_output, weight_matrix)
