@@ -4,46 +4,20 @@
 ![image](https://github.com/ashioyajotham/Daily-ML/assets/71454095/8a56b7e4-0e1d-48d4-a2ec-02cdf239441e)
 * Jason Brownlee on [Variance](https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/)
 
-  ![image](https://github.com/ashioyajotham/Daily-ML/assets/71454095/7b129bf8-24d6-4fbe-8d38-faabe772c2d9)
-
-
-
-## [Modelling Non-Linear Features-Target Relationship](https://github.com/ashioyajotham/ML-Algorithms/blob/main/linear-regression-non-linear-btn-data-and-target.ipynb)
-* Linear regression with non-linear link between data and target
-* The deployment of scikit-learn in linear models in this case, Linear Regression
-* Machine learning modelling alogorithms:
-         - Linear Regression
-         - Decision Tree Regressor
-         
-* Dealing with non-linearity;
-        i) choose a model that can natively deal with non-linearity,
-       ii) engineer a richer set of features by including expert knowledge which can
-                be directly used by a simple linear model, or
-      iii) use a "kernel" to have a locally-based decision function instead of a
-            global linear decision function.
-
-CC: [inria Machine learning in Python with scikit-learn](https://inria.github.io/scikit-learn-mooc/)
-    (https://www.inria.fr/en/mooc-scikit-learn)
-    
-    
-    
-
-# [Orinary Least Squares (OLS) algorithm](https://github.com/ashioyajotham/ML-Algorithms/blob/main/ols-models.ipynb)
-* This case we take a closer look at the OLS model from the `statsmodels` library
-
-
-
-
-# [Titanic](https://github.com/ashioyajotham/ML-Algorithms/blob/main/titanic-classification.ipynb)
-* Of course it can't be complete without the "hello world" of machine learning. Here we look at `Random Classifiers` and `Logistic Regression`
-
-
-
+  
 # Linear Regression
 *  linear regression was developed in the field of statistics and is studied as a model for understanding the relationship between input and output numerical variables, but has been borrowed by machine learning. It is both a statistical algorithm and a machine learning algorithm.
 *  Linear regression is a linear model, e.g. a model that assumes a linear relationship between the input variables (x) and the single output variable (y). More specifically, that y can be calculated from a linear combination of the input variables (x).
 *  When there is a single input variable (x), the method is referred to as simple linear regression. When there are multiple input variables, literature from statistics often refers to the method as multiple linear regression.
 *  Different techniques can be used to prepare or train the linear regression equation from data, the most common of which is called Ordinary Least Squares. It is common to therefore refer to a model prepared this way as [Ordinary Least Squares Linear Regression or just Least Squares Regression](https://github.com/ashioyajotham/Daily-ML/blob/main/ols-models.ipynb).
 
-# [Misc]
-* Postgres - https://linuxhint.com/connect-to-postgresql-database-command-line-windows/
+# Transformers
+*  Transformers are a type of deep learning model that has proven to be very effective in a variety of natural language processing tasks. They are based on a self-attention mechanism that allows the model to focus on different parts of the input sequence when predicting each part of the output sequence.
+* They were first introduced in the paper "Attention is All You Need" by Vaswani et al. in 2017, and have since become one of the most popular deep learning architectures for natural language processing. The paper argues that the self-attention mechanism used in transformers is more powerful than the recurrent and convolutional architectures that were previously used in NLP tasks. Primarily it was meant for machine translation but has since been used in other NLP tasks.
+*  Transformers have been used to achieve state-of-the-art performance on a variety of natural language processing tasks, including machine translation, text summarization, and language modeling. They have also been used in other domains, such as computer vision and speech recognition.
+* The architecture of a transformer consists of an encoder and a decoder. The encoder processes the input sequence and produces a sequence of hidden states, which are then used by the decoder to generate the output sequence. The self-attention mechanism allows the model to focus on different parts of the input sequence when predicting each part of the output sequence, which makes it more effective at capturing long-range dependencies in the data. 
+  ** Self attention is a mechanism that allows the model to focus on different parts of the input sequence when predicting each part of the output sequence. It is based on the idea of attention, which was first introduced in the paper ["Neural Machine Translation by Jointly Learning to Align and Translate"]( by Bahdanau et al. in 2015. The attention mechanism allows the model to focus on different parts of the input sequence when predicting each part of the output sequence, which makes it more effective at capturing long-range dependencies in the data.
+** Multi-head attention is a variant of the self-attention mechanism that allows the model to focus on different parts of the input sequence in parallel. It consists of multiple attention heads, each of which learns to focus on different parts of the input sequence. This allows the model to capture different types of information in the data and make more accurate predictions.
+** Position-wise feedforward networks are used to process the hidden states produced by the self-attention mechanism. They consist of two linear layers with a ReLU activation function in between. This allows the model to capture complex patterns in the data and make more accurate predictions.
+** Layer normalization is used to normalize the hidden states produced by the self-attention mechanism. It consists of a layer normalization layer followed by a dropout layer. This allows the model to capture complex patterns in the data and make more accurate predictions.
+** The encoder and decoder are connected by a cross-attention mechanism, which allows the decoder to focus on different parts of the input sequence when generating the output sequence. This makes the model more effective at capturing long-range dependencies in the data and making more accurate predictions.
