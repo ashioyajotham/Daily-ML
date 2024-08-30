@@ -13,6 +13,7 @@ class Transformer:
         self.embedding_dim = embedding_dim
         self.num_heads = num_heads
         self.multi_head_attention = MultiHeadAttention(embedding_dim, num_heads)
+        self.output_projection = np.random.randn(embedding_dim, embedding_dim)
         self.output_projection = self.output_projection * np.sqrt(1./embedding_dim) # scale the values down by the square root of the embedding dimension
 
     def forward(self, embeddings):
@@ -66,12 +67,11 @@ class Transformer:
             words.append(next_word)
             return " ".join(words)
         
-        # Initialize the Transformer model
-transformer = Transformer(embedding_dim=300, num_heads=5)
+# Create an instance of the Transformer model
+transformer = Transformer(embedding_dim=300, num_heads=6)
 
-# Complete the sentence
-sentence = "The cat"
-completed_sentence = transformer.complete_sentence(sentence)
+# Complete the sentence starting with "The cat"
+completed_sentence = transformer.complete_sentence("The cat")
 print(completed_sentence)
 
 # To run the code, you need to have the following files in the same directory as the code:
