@@ -34,3 +34,21 @@ queries[i].length == 2
 0 <= lefti <= righti < arr.length
 
 """
+
+# Plan:
+# 1. Calculate the prefix XOR of the given array.
+# 2. For each query, calculate the XOR of the prefix XOR values at the two indices.
+# 3. The XOR of the prefix XOR values at the two indices gives the XOR of the elements in the subarray between the two indices.
+# 4. Return the list of XOR values for all the queries.
+
+class Solution:
+    def xorQueries(self, arr: List[int], queries: List[List[int]]) -> List[int]:
+        prefix_xor = [0]
+        for num in arr:
+            prefix_xor.append(prefix_xor[-1] ^ num)
+        
+        res = []
+        for left, right in queries:
+            res.append(prefix_xor[left] ^ prefix_xor[right + 1])
+        
+        return res
