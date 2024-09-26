@@ -53,12 +53,13 @@ s consists of only English letters (both uppercase and lowercase), digits (0-9),
 # 4. Create a function to check if the string is a decimal.
 # 5. Create a function to check if the string is an exponent.
 # 6. Check if the string is a number.
+# 7. Time complexity is O(n) where n is the length of the string.
 
 class Solution:
     def isNumber(self, s: str) -> bool:
         s = s.strip()
         def is_number(s):
-            return is_integer(s) or is_decimal(s)
+            return is_integer(s) or is_decimal(s) or is_exponent(s)
         def is_integer(s):
             if not s:
                 return False
@@ -72,15 +73,13 @@ class Solution:
                 s = s[1:]
             if '.' not in s:
                 return False
-            integer_part, decimal_part = s.split('.')
-            return (not integer_part or integer_part.isdigit()) and (not decimal_part or decimal_part.isdigit())
+            left, right = s.split('.')
+            return (left.isdigit() or not left) and right.isdigit()
         def is_exponent(s):
             if not s:
                 return False
-            if s[0] in ['+', '-']:
-                s = s[1:]
             if 'e' not in s and 'E' not in s:
                 return False
-            base, exponent = s.split('e') if 'e' in s else s.split('E')
-            return is_number(base) and is_integer(exponent)
+            left, right = s.split('e') if 'e' in s else s.split('E')
+            return is_number(left) and is_integer(right)
         return is_number(s)
