@@ -46,40 +46,49 @@ Constraints:
 s consists of only English letters (both uppercase and lowercase), digits (0-9), plus '+', minus '-', or dot '.'.
 
 """
-# Action Plan
-# 1. Remove the leading and trailing whitespaces.
-# 2. Create a function to check if the string is a number.
-# 3. Create a function to check if the string is an integer.
-# 4. Create a function to check if the string is a decimal.
-# 5. Create a function to check if the string is an exponent.
-# 6. Check if the string is a number.
-# 7. Time complexity is O(n) where n is the length of the string.
-
 class Solution:
     def isNumber(self, s: str) -> bool:
-        s = s.strip()
-        def is_number(s):
-            return is_integer(s) or is_decimal(s) or is_exponent(s)
-        def is_integer(s):
-            if not s:
+        # {state: {char_type: state}}
+        transitions = {
+            'Start': {'digit': 'Integer', 'sign': 'Sign', 'dot': 'Dot'},
+            'Sign': {'digit': 'Integer', 'dot': 'Dot'},
+            'Integer': {'digit': 'Integer', 'dot': 'Fraction', 'e': 'Exponent'},
+            'Dot': {'digit': 'Fraction'},
+            'Fraction': {'digit': 'Fraction', 'e': 'Exponent'},
+            'Exponent': {'digit': 'Exp_number', 'sign': 'Exp_sign'},
+            'Exp_sign': {'digit': 'Exp_number'},
+            'Exp_number': {'digit': 'Exp_number'}
+        }
+        
+        valid_end_states = {'Integer', 'Fraction', 'Exp_number'}
+
+        def get_char_type(char):
+            if char.isdigit():
+                return 'digit'
+            if char in '+-':
+                return 'sign'
+            if char in 'eE':
+                return 'e'
+            if char == '.':
+                return 'dot'
+            return None
+
+        current_state = 'Start'
+
+        for char in s:
+            char_type = get_char_type(char)
+            if not char_type or char_type not in transitions[current_state]:
                 return False
-            if s[0] in ['+', '-']:
-                s = s[1:]
-            return s.isdigit()
-        def is_decimal(s):
-            if not s:
-                return False
-            if s[0] in ['+', '-']:
-                s = s[1:]
-            if '.' not in s:
-                return False
-            left, right = s.split('.')
-            return (left.isdigit() or not left) and right.isdigit()
-        def is_exponent(s):
-            if not s:
-                return False
-            if 'e' not in s and 'E' not in s:
-                return False
-            left, right = s.split('e') if 'e' in s else s.split('E')
-            return is_number(left) and is_integer(right)
-        return is_number(s)
+            current_state = transitions[current_state][char_type]
+
+        return current_state in valid_end_states
+    
+# From the above code, we can deduce the action plan:
+# 1. Create a dictionary to keep track of the transitions.
+# 2. Create a set to keep track of the valid end states.
+# 3. Create a function to get the character type.
+# 4. Initialize the current state to 'Start'.
+# 5. Traverse through the string and get the character type.
+# 6. If the character type is not valid or not in the transitions, return False.
+# 7. Update the current state.
+# 8. Return True if the current state is in the valid end states.
