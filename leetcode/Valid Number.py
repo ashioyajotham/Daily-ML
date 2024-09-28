@@ -92,3 +92,36 @@ class Solution:
 # 6. If the character type is not valid or not in the transitions, return False.
 # 7. Update the current state.
 # 8. Return True if the current state is in the valid end states.
+
+# Alternative code
+class Solution:
+    def isNumber(self, s: str) -> bool:
+        states = [
+            {'d': 1, 's': 2, '.': 3},  # 0. Start
+            {'d': 1, '.': 4, 'e': 5},  # 1. Integer
+            {'d': 1, '.': 3},          # 2. Sign
+            {'d': 4},                  # 3. Dot without left digits
+            {'d': 4, 'e': 5},          # 4. Dot with digits (left or right)
+            {'d': 7, 's': 6},          # 5. Exponent marker
+            {'d': 7},                  # 6. Exponent sign
+            {'d': 7},                  # 7. Exponent digits
+        ]
+        
+        current_state = 0
+        for char in s:
+            if char.isdigit():
+                typ = 'd'
+            elif char in '+-':
+                typ = 's'
+            elif char in 'eE':
+                typ = 'e'
+            elif char == '.':
+                typ = '.'
+            else:
+                return False
+            
+            if typ not in states[current_state]:
+                return False
+            current_state = states[current_state][typ]
+        
+        return current_state in [1, 4, 7]
