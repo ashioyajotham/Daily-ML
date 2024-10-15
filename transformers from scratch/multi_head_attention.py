@@ -123,3 +123,154 @@ class MultiheadAttention(nn.Module):
         values = torch.matmul(attention, v)
         
         return values, attention
+
+    @staticmethod
+    def mask_logits(logits: torch.Tensor,
+                    src_padding_mask: Optional[torch.BoolTensor] = None,
+                    future_mask: Optional[torch.BoolTensor] = None) -> torch.Tensor:
+        """
+        Mask the logits
+        :param logits: tensor of shape (batch_size, num_heads, seq_len, seq_len)
+        :param src_padding_mask: mask for source sequence
+        :param future_mask: mask for future tokens
+        :return: masked logits
+        """
+        if src_padding_mask is not None:
+            marked_logits = logits.masked_fill(
+                src_padding_mask[:, None, None, :]==0, float('-inf'))
+            
+        if future_mask is not None:
+            marked_logits = logits.masked_fill(future_mask==0, float('-inf'))
+
+        return marked_logits
+    
+class TestMultiheadAttention(unittest.TestCase):
+    def test_scaled_dot_product(self):
+        mha = MultiheadAttention(512, 8)
+        q = torch.randn(4, 8, 10, 512)
+        k = torch.randn(4, 8, 10, 512)
+        v = torch.randn(4, 8, 10, 512)
+
+        values, attention_scores = mha.scaled_dot_product_attention(q, k, v)
+
+        self.assertEqual(values.shape(), (4, 10, 512))
+        self.assertEqual(attention_scores.shape(), (4, 8, 10, 10))
+
+        expected = torch.Tensor([1.0]).repeat(4, 8, 10)
+        torch.testing.assert_close(torch.sum(attention_scores, dim=-1), expected)
+
+        self.assertEqual(torch.any(torch.isnan(values)), False)
+        self.assertEqual(True in torch.isnan(attention_scores), False)
+
+    def test_scaled_dot_product_encoder_self_attention_mask(self):
+            mha = MultiheadAttention(512, 8)
+            q = torch.randn(2, 8, 10, 512, dtype=torch.float)
+            k = torch.randn(2, 8, 10, 512, dtype=torch.float)
+            v = torch.randn(2, 8, 10, 512, dtype=torch.float)
+
+            mask = torch.BoolTensor(
+                [
+                    [1, 1, 1, 1, 1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+                ]
+                )
+
+            values, attention_scores = mha.scaled_dot_product_attention(q, k, v, src_padding_mask=mask)
+            self.assertEqual(torch.any(torch.isnan(attention_scores), False))
+
+            self.assertEqual(torch.all(attention_scores[0, :, :, 8:] == 0), True)
+            self.assertEqual(torch.any(attention_scores[0, :, :, :8] == 0), False)
+
+            expected = torch.Tensor([1.0]).repeat((2, 8, 10))
+            torch.testing.assert_close(torch.sum(attention_scores, dim=-1), expected)
+
+            self.assertEqual(torch.any(attention_scores[1] == 0), False)
+
+    def test_mha_self_attention_forward(self):
+        mha = MultiheadAttention(512, 8)
+        x = torch.randn(4, 10, 512, dtype=torch.float)
+        output = mha.forward(x)
+        self.assertEqual(output.shape, (4, 10, 512))
+        self.assertEqual(torch.any(torch.isnan(output)), False)
+
+    def test_mha_cross_attention_forward(self):
+        mha = MultiheadAttention(512, 8)
+        encoder_hidden_states = torch.randn(4, 10, 512, dtype=torch.float)
+        decoder_hidden_states = torch.randn(4, 10, 512, dtype=torch.float)
+        output = mha.forward(decoder_hidden_states, encoder_hidden_states)
+        self.assertEqual(output.shape, (4, 10, 512))
+        self.assertEqual(torch.any(torch.isnan(output)), False)
+
+    def test_future_masking(self):
+        batch_size, n_heads, seq_len = 2, 2, 3
+        logits = torch.randn(batch_size, n_heads, seq_len, seq_len, dtype=torch.float)
+        future_mask = construct_future_mask(seq_len)
+        self.assertEqual(future_mask.shape, (3, 3))
+
+        masked_logits = MultiheadAttention(512, num_heads=n_heads).mask_logits(logits, future_mask=future_mask)
+        torch.testing.assert_close(torch.isinf(masked_logits) == 0, 
+                                    torch.BoolTensor(
+                [
+                    [
+                        [
+                            [True, False, False],
+                            [True, True, False],
+                            [True, True, True],
+                        ],
+                        [
+                            [True, False, False],
+                            [True, True, False],
+                            [True, True, True],
+                        ],
+                    ],
+                    [
+                        [
+                            [True, False, False],
+                            [True, True, False],
+                            [True, True, True],
+                        ],
+                        [
+                            [True, False, False],
+                            [True, True, False],
+                            [True, True, True],
+                        ],
+                    ],
+                ]
+            ),
+        )
+
+    
+    def test_src_padding_masking(self):
+        batch_size, n_heads, seq_len = 2, 2, 3
+        logits = torch.randn(batch_size, n_heads, seq_len, seq_len, dtype=torch.float)
+        src_padding_mask = torch.BoolTensor([[True, True, True], [True, False, False]])
+        self.assertEqual(src_padding_mask.shape, (2, 3))
+        masked_logits = MultiheadAttention(512, num_heads=n_heads).mask_logits(
+            logits, src_padding_mask=src_padding_mask
+        )
+        torch.testing.assert_close(
+            torch.isinf(masked_logits) == 0,
+            torch.BoolTensor(
+                [
+                    [
+                        [[True, True, True], [True, True, True], [True, True, True],],
+                        [[True, True, True], [True, True, True], [True, True, True],],
+                    ],
+                    [
+                        [
+                            [True, False, False],
+                            [True, False, False],
+                            [True, False, False],
+                        ],
+                        [
+                            [True, False, False],
+                            [True, False, False],
+                            [True, False, False],
+                        ],
+                    ],
+                ]
+            ),
+        )
+
+
+if __name__ == "__main__":
+    unittest.main()
