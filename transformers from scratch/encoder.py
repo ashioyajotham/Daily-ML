@@ -40,7 +40,7 @@ class TransformerEncoder(nn.Module):
         x = self.embed(input_ids) * math.sqrt(self.hidden_dim)
         x = x + self.positional_encoding(x)
         x = self.dropout(x)
-        for encoder in self.encoder_blocks:
+        for encoder_block in self.encoder_blocks:
             x = encoder_block(x, mask = mask)
 
         return x
@@ -86,12 +86,12 @@ class TestEncoder(unittest.TestCase):
         en_vocab_size = len(en_vocab.token_to_index.items())
         with torch.no_grad():
             encoder = TransformerEncoder(
-                embedding = torch.nn.Embedding(en_vocab_size, 512)
+                embedding = torch.nn.Embedding(en_vocab_size, 512),
                 hidden_dim = 512,
                 ff_dim = 2048,
                 num_heads = 8,
                 num_layers = 2,
-                dropout_p = 0.1
+                dropout_p = 0.1,
             )
             encoder._reset_parameters()
             encoder.eval()
@@ -99,3 +99,36 @@ class TestEncoder(unittest.TestCase):
             input_batch = torch.IntTensor(
                 en_vocab.batch_encode(batch, add_special_tokens = False)
             )
+            output = encoder.forward(input_batch)
+            self.assertEqual(output.shape, (1, 14, 512))
+            self.assertEqual(torch.any(torch.isnan(output)), False)
+
+    def test_transformer_encoder_multi_sequence_batch(self):
+        batch = [
+            "Hello, my name is Jotham and I was born with the name Jotham.",
+            "A shorter sequence in the batch",
+        ]
+        en_vocab = Vocabulary(batch)
+        en_vocab_size = len(en_vocab.token_to_index.items())
+
+        with torch.no_grad():
+            encoder = TransformerEncoder(
+                embedding = torch.nn.Embedding(en_vocab_size, 512),
+                hidden_dim = 512,
+                ff_dim = 2048,
+                num_heads = 8,
+                num_layers = 2,
+                dropout_p = 1,
+            )
+            encoder.eval()
+            input_batch = torch.IntTensor(
+                en_vocab.batch_encode(batch, add_special_tokens = False, padding = True)
+            )
+            mask = input_batch != en_vocab.token_to_index[en_vocab.PAD]
+            output = encoder.forward(input_batch, mask=mask)
+
+            self.assertEqual(output.shape, (2, 14, 512))
+            self.assertEqual(torch.any(torch.isnan(output)), False)
+
+if __name__ == "__main__":
+    unittest.main()
