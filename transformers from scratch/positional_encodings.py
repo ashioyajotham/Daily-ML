@@ -3,7 +3,7 @@ import unittest
 
 import torch
 
-class SinusoidEncoding(torch.nn.module):
+class SinusoidEncoding(torch.nn.Module):
 
     def __init__(self, hidden_dim, max_len = 5000):
 
