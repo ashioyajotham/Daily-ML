@@ -37,3 +37,11 @@ Explanation:
 Tweet 1 has length = 11. It is a valid tweet.
 Tweet 2 has length = 33. It is an invalid tweet.
 */
+
+-- Write your MySQL query statement below
+SELECT tweet_id
+FROM Tweets
+WHERE LENGTH(content) > 15
+```
+
+```sql
