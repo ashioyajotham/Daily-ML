@@ -1,0 +1,40 @@
+# Python virtual environment
+venv/
+env/
+.env/
+*.pyc
+__pycache__/
+.Python
+.python-version
+
+# Data files
+*.csv
+*.parquet
+*.pkl
+*.h5
+*.hdf5
+*.json
+*.xlsx
+*.xls
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Logs
+*.log
+logs/
