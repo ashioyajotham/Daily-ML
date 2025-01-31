@@ -1,0 +1,83 @@
+***********************************Natural languages vs programming languages****************************************
+
+Machine language - computer language very rudimentary
+Instruction List(IL) - complete set of commands which vary from one computer to another
+Natural languages - words created everyday and old words disappear
+
+*********************What makes a language*************************
+   Alphabet - set of symbols use to build words of a certain language
+   Lexis(dictionary) - set of words the language offers its users 
+   Syntax - set of riles (Informal or formal) used to determine if a certain string of words form a valid sentence
+   Semantics -set of rules determining if a certain phrase makes sense
+
+*IL(Instruction List) is the alphabet of a machine language
+*A program written in high level programming language is called a source code
+
+**********************Compilation vs Interpration*************************
+Computer programming is the act of composing the selected programming language's elements in the order that will cause the desired effect.
+
+There are two ways of transforming a program from a high-level programming language into machine language
+
+            Compilation - the source program is translated once(however, this act must be repeated each time you modify the source code) by getting a file
+                           (eg an .exe file if the code is intended to run under MS Windows) containing the machine code; now you can distribute the file worldwide
+                           ;the program that performs this translation is called a compiler or a translator
+                 
+            Interpretation - you (or any user of the code) can translate the source program each time it has　to be run ; the program performing this kind of                              transformation is called an interpreter, as it interprets the code everytime it is intended to be executed; it is also means that you                              cannot just distribute the source code as-is, because the end-user also needs to interpreter to execute it.
+                                                                *python is an interpreted language
+
+
+ * Python - is a high-level pogramming language,objected oriented, interpretedand widely-used with dynamic semantics, used for generfal purpose programming.
+  It was named after an old BBc sketch series called Monty Python's Flying Circus. It was created by Guido Van Rossum, born in 1956 in Haarlem, the Netherlands. The  speed with which Python has spread around the world is a result of numerous (very often anonymous) programmers, testers, users(many of them aren't IT specialists).
+
+************************Python Rivals*********************
+Perl - a scripting language originally authored bu Larry Wall
+Ruby - a scripting language originally authored by Yukihiro Matsumoto
+
+The former is more traditional than python and resembles some of the good old languages derived from　the classic C programming language. In contrast, the latter is more innovative than Python. Python itself lies between these twio  creations
+
+******Applications of Python*************************
+Implement complex internet services like search engines, cloud storage and social media
+Lots of IT project testers have started using Python to carry out repeatable test procedures
+
+
+********************Why Not Python?****************************
+Low level programming - if you want to implement an extremely effective driver or graphical engine, you wouldn't use python
+Applications for mobile devices 
+
+ ****************************************Types of Python*********************************************************
+I)Python 2
+II)Python 3
+III)Cpython
+
+Python 2 is the older version. It's development has stalled but are still issued not intended to modify the language in any significant way but rather fix any freshly discovered bugs and security holes
+Python 3 is the newer version of the language.Python 2 scripts won't run in Python 3 and vice versa. If you are modifying an old existing python solution, then it's very likely that it was coded in python 2. This is the reason why Python 2 is still in use.  
+
+
+
+**************************************************CPYTHON**************************************************************************
+#There are pythons which are maintained by Python Software Foundation, a community that aims to　develop, improve, expand and popularize Python and its environment which is headed Guido Von Rossum and for this reason they are called canonical/refernce pythons, as any other implementation of the language should follow all standards standards est5ablished by the PSF.
+#Guido Van Rossum used the C language to implement the very first version of his language and this decision is still in force.One of the reasons for this is that thanks to it, Python may be easily ported and migrated to all platformswith the ability to run and compile C language programs(virtually all platforms have this feature, which opens up many expansion opportunities for Python).
+#This is the most influential Python among all pythons in the world.
+
+
+*****************************************************CYTHON**********************************************************************************
+#Large and complex mathematical calculations may be easily coded in Python(much easier than C or any other traditional language), but the resulting code's execution may be extremely time-consumimg.One solution is to write your mathematical ideas using Python and when you are absolutely sure that your code is correct and produces valid results, you can translate it into C. Certainly C will run much faster than pure python.
+#Cython is intended to automatically translate the Python code (clean and clear but not too swift) into C code(complicated and talkative but agile)
+
+
+***************************************************JYTHON****************************************************************************
+Python writen in Java useful if you develop large and complex systems written entirely in Javaand want to add some Python flexibility in them.
+
+
+*****************************************************PyPy and RPython****************************************************************
+A subset of Python representing a Python environment written in Python-like language named Restricted Python(RPython).It's source code is not run in the interpretsation manner, but is instead translated into C and then executed separately.This is useful if you want to test a feature that maybe introduced mainstreamPython implementation, it's easier to check it with PyPy than with CPython.This is why PyPy is rather a tool for developing Python than the rest of the users.
+
+
+
+
+N/B
+Editor -support you in writing the code
+console - launch your newly written code
+Debugger - launch your code step by stepand allowing you to inspect it step by step
+
+

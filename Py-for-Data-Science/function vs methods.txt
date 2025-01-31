@@ -1,0 +1,15 @@
+*A method is a specific kind of function - it behaves like a function, but it differs in the way in which it acts, and its invocation style
+*A function doesn't belong to any data - it gets data, it may create new data and it (generally) produces a result.
+*A method does all these things, but is also able to change the state of a selected entity.
+*A method is owned by the data it works for, while a function is owned by the whole code.
+*Invoking a method requires some specification of the data from which the method is invoked.
+*It may sound puzzling here, but we'll deal with it in depth when we delve into object-oriented programming.
+*In general,　a typical function invocation may look like this:
+result = function(arg) - the function takes an argument, does something, and returns a result.
+
+*A  typical method invocation usually looks like this:
+result = data.method(arg)
+N/B*The name of the method is preceded by the name of the data which owns the method. Next you add a dot, followed by the method name, and a pair of paranthesis enclosing the arguments.
+
+*The method will behave like a function, but can do something more - it can change the internal state of the data from　which it is revoked.
+ 

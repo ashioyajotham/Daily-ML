@@ -1,0 +1,5 @@
+Positional arguements - the ones whose meaning is dictated by their position eg the second arguement is outputted after the                         first, the third is outputted after the second.
+
+Keyword arguements - the one whose meaning whose meaning is not dictated by their locationbut by a special word (keyword)                      used to identify them.
+
+ 

@@ -1,0 +1,4 @@
+Right sided binding means the expression will be evaluated from right to left.
+The forward slash is known as the integer operator, it will divide the left by the right and keep the whole number.
+N/B*The binding of the operator determines the operation.Most of Python's operators have left-sided binding meaning the calculation starts from left to right.
+*The exponention operator uses right-sided binding

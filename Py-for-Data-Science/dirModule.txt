@@ -1,0 +1,4 @@
+*It reveals names provided through a particular module with the condition that the module has to have been imported as a whole (ie using import module instruction - from module is not enough)
+*The function returns an alphabetically sorted list containing all entities' names available in the module identified by a name passed to the function as an arguement.
+N/B* If the module's name is aliased, you must use the alias not the original name.
+ 

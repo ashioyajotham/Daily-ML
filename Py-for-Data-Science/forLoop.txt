@@ -1,0 +1,21 @@
+*It comes from the obserrvation that sometimes it is more important to count the turns of the loop than to count the condition ie
+
+for i in range(100):
+    #do something
+    pass
+
+*The range() function may be equippped with  arguements
+ i)the first determines the initial value of the control variable
+ii)the last shows the first value the control variable will not be assigned, the increment(step)
+
+*The range() function accepts only integers as its arguments and generates sequences of integers
+
+The range () function generates a sequence of numbers. It accepts integers and returns range objects.
+The syntax of range() is as follows: range(start, stop, step) where
+               start - optional parameter specifying the starting number 
+                       of the sequence(0 by default)
+               stop -  an optional parameter specifying the end of the sequence generated(it is not included)
+               step - an optional parameter specifying the difference between the numbers in the sequence
+                      (1 by default)
+
+              

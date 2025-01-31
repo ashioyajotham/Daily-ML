@@ -1,0 +1,9 @@
+The range () function generates a sequence of numbers. It accepts integers and returns range objects.
+The syntax of range() is as follows: range(start, stop, step) where
+               start - optional parameter specifying the starting number 
+                       of the sequence(0 by default)
+               stop -  an optional parameter specifying the end of the sequence generated(it is not included)
+               step - an optional parameter specifying the difference between the numbers in the sequence
+                      (1 by default)
+
+              

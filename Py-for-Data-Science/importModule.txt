@@ -1,0 +1,93 @@
+*While importing a module, python looks at several places. Interpreter first looks for a built-in module. If not found, Python looks into a list of directories defined in sys.path in the following order;
+        # the current directory
+	# PYTHONPATH (an environment variable with a list of directories)
+	# the instalation-dependent default directory
+
+#The variable is named path and it's accessible through the module named sys
+
+*************************Packages***********************************************
+* We use a well-organized hierarchy of directories for easier access. Similar files are kept in the same directory, for example, we may keep all the songs in the "music" directory. Analogous to this, Python has packages for directories and modules for files.
+* Similarly, as a directory can contain subdirectories and files, a Python package can have sub-packages and modules.
+* A directory must have a file named __init__.py in order for Python to consider it as a package. The file can be left   empty but we generally place the initialization code for that package in this file.
+
+Example:
+                                 Package
+                                 (Game)
+  __init__.py   Sub-package  Sub-package  Sub-package
+                 (Sound)      (Image)      (Level)
+                 _init_.py    _init_.py    _init_.py
+                 load.py      open.py      start.py
+                 play.py      change.py    load.py
+                 pause.py     close.py     over.py  
+
+
+**********Importing module from a package**************
+*We use the dot operator to import modules from packages
+
+   # import Game.Level.start
+
+*Now if the module contains a function named select_difficulty, we must use the full name to reference it
+
+  # Game.Level.start.select_difficulty()
+
+*We can also import the module w/o the package prefix as follows
+
+  # from Game.Level import start
+
+*Hence call the function simply as follows 
+ 
+  # start.select_difficulty(2)
+
+*Another way of importing just the required function from a module within a package will be as follows
+
+ # from Game.Level.start import select_difficulty
+
+*Now we can directly call the function
+
+ # select_difficulty(2)
+
+
+N/B* Importing a package essentially imports the package's _init_.py file as a module
+   * A module is a file which has a .py extension
+   * Imports are generally divided into three groups
+       # standard library imports(Python's built-in modules)
+       # related third party imports (modules that are installed and do not belong to the current application)
+       # local application imports (modules that belong to the current application)
+
+   * If you want your module user to treat a particular entity as private (ie not explicitly used outside the module) you        can mark the name with either the _ or __ prefix.
+   * Shebang/hashbang/poundbag/haspling(#!) - used to instruct Unix-like OSs how the python source file should be launched.
+
+******************************* Relative Imports************************************************
+#Relative imports - specifies the resource to be imported relative to its current location-that is, the location where the import statement is. There are of two types: implicit amd explicit
+#They make use of dot notation to specify the location. A single dot means that the module or package referenced is in the same directory as the current location. Two means that it is in the parent directory-the directory above- of the current location. Three means it is in the grandparent directory
+
+# Consider
+            Project
+               package1
+                   module1.py
+                   module2.py
+               package2
+                   __init_.py
+                   module3.py
+                   module4.py
+                   subpackage1
+                       module5.py
+
+package1/module2.py contains a function, function1
+package2/_init_.py contains a class, class1
+package2/subpackage1/module5.py contains a function, function, function2
+
+You can import function1 into the package1/module1.py file this way
+ from .module2 import function1
+ 
+You can import class1 and function2 into the package2/module3.py this way
+ from . import class1
+ from .subpackage1.module5 import function2
+
+# Importing a package esentially imports the package's _init_.py file as a module
+# Subpackage1 is in the same directory as the current module, which is module3.py
+
+
+
+
+

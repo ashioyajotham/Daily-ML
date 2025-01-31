@@ -1,0 +1,45 @@
+****************************************Nummerical functions *************************************************************
+
+#Ceil value means the smallest integral value than the number and the floor value means the greatest integral value smaller  than the number.
+# fabs () - finding the absolute value
+# gcd() - find the greatest common divisor(GCD)
+# factorial() 
+# trunc - truncate. When truncating positive numbers, trunc() behaves the same as floor while truncating neg numbers, trunc() behaves like ceil()
+
+
+*************************Constants*************************************
+# math.e - returns the Euler's constant: 2.71828182846
+# math.pi - provides a more precise value for pi 
+# math.tau - returns the value tau: 6.283185307179586 . Tau is defined as the ratio of the circumference to the radius of   the circle
+# math.inf - returns positive infinity 
+# -math.inf - negative infinity
+# math.nan - returns a floating point nan (Not a number) value. This value is not a legal number. The nan constant is   eqnuivalent to float("nan")
+
+
+****************************Logarithimic and Power functions***************************************
+exp() - used to calculate the power of e ie e^y
+pow() - computes x**y. This function first converts its arguments into float and then computes the power
+
+Finding logarithm
+log() - if the base is not mentioned, the computed value is of the natural log.
+log2(a) - computes the value of log a with base 2
+
+sqrt() - square root
+
+
+*******************Trigonometric and angular functions*****************************
+sin()
+cos()
+tan()
+
+
+***********Converting values from degrees to radians and vice versa********************
+degrees() - convert argument value from radians to degrees
+radians() - convert argument value from degree to radians
+
+
+
+********************Special functions******************************
+gamma() - return the gamma value of an argument
+isinf() - used to check whether the value is infinity or not
+isnan() - returns True if the number is "Nan" else returns False  

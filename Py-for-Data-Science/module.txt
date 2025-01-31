@@ -1,0 +1,13 @@
+*A file containing python definitions and statements, which can be later imported and used when necessary.
+*The handling of modules consists of two different issues:
+        i)user - happens when you want to use an already existing module, written by someone else or created by yourself                  during work on some complex project.
+       ii)supplier - occurs  when you want to create a brand new module, either for your own use, or to make other                      programmers' lives easier. 
+
+* A module is identified by its name. If you want to use any module, you need to know the name. A (rather large) number of   modules is delivered together with python itself. You can think of them as a kind of "Python extra equipment".
+* All these modules, along with the built-in, form the Python standard library - a special sort of library where modules   play the roles of books ( we can say that folders play the role of shelves).
+* Each module consists of entities (like a book consists of chapters). These entities can be functions, variables, constants, classes and objects eg math (module name) has math functions like sin()
+
+******************Namespace*******************************************
+*A space (understood in a non-physical context) in which some names exist and the names don't conflict with each other (ie there are not two different objects of the name). We can say that each social group is a namespace-the group tends to name each of its members in a unique way.
+N/B*A module is a source file
+*If a module of a specified name exists and is accessible, Python imports all its contents ie all the names defined in the module become known, but they don't enter your code's namespace.

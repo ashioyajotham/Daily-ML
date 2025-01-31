@@ -1,0 +1,13 @@
+Priority Operator
+1         +,-       unary
+2         **        
+3         *,/,//,%
+4         +,-       binary
+
+NOTE*Highest priority to lowest priority
+*Unary - have one operator eg -1, or +3
+*binary - have two operators eg 4 + 5, or 12 % 5
+*floor/integer division - returns a number resulting from division, but rounded down to the nearest whole number eg 3 // 2.0 = 1.0
+
+== equal equal operator  ie a binary operator with left-sided binding. It needs two arguements and checks if they are equal.
+= assignment operator

@@ -1,0 +1,17 @@
+Syntax: lst[ Initial : End : IndexJump]
+Slice can take three parameters:
+   *start(optional) - starting integer where the slicing of the object starts.
+                      Default to none if not provided
+   *stop -integer until which the slicing takes place. The slicing stops at indexstop -1
+          (last element)
+   *step(optional) - integer value which determines the increment  
+                    between each index for slicing. Defaults to none if not provided.
+                     
+Slicing  can be used both with positive indexes as well as negative indexes
+One heuristic is , for a slice from zero to n, think: "Zero is the beginning, start at the 
+beginning and take n items in a list."
+
+*************Rules of Slicing*************************
+#Since slicing returns a list, slice assignment requires a list
+#The assigned list (iterable) doesn't have to have the same length; the indexed
+ is simply sliced out and replaced en masse by whateverv is beng assigned

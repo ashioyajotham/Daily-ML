@@ -1,0 +1,52 @@
+Logical operators - operators to build conjunction and disjunction
+
+1)and
+*A binary operator with a priority lower than the one expressed by the comparison operators
+*It allows us to code complex conditions without use of parantheses
+eg counter > 0 and value == 100
+
+Using a truth table 
+Argument A       Argument B       A and B
+False             False           False
+False             True            False 
+True              False           False
+True              True            True
+
+
+2)or
+*A disjunction operator ie a binary operator with a lower priority than and (just like + compared to *)
+*It's truth table is as follows 
+Argument A        Argument B         A or B
+False             False              False
+False             True               True
+True              False              True
+True              True               True
+
+
+3)not
+*In addition, there's another operator that can be applied for constructing conditions. It's a unary operator performing a logical negation. It's operation is simple: it turns truth into falsehood and falsehood into truth.
+*Its priority is very high same as the unary + and -
+*Its truth table is as follows
+Argument A        not Argument 
+False               True
+
+
+*********************************Bitwise operators**********************************************
+&(ampersand) - bitwise conjunction.
+|(bar) - bitwise disjunction
+~(tilde) - bitwise negation. Same as -x-1
+^(caret) - bitwise exclusive or(xor)
+
+& - requires exactly two 1s to provide 1 as a result
+| - requires at least one 1 to provide 1 as the result
+^ - requires exactly one 1 to provide 1 as the result  
+
+Bitwise operations(~)
+Argument     Argument
+0              1
+1              0
+
+NOTE*The arguments of these operators must be integers; we must not use floats here.
+    *The difference in the operation of logical and bit operators is that the logical operators do not penetrate into the      bit level of its argument. They are only interested in the final integer value.
+    *Bitwise operators are stricter; they deal with every bit separately
+

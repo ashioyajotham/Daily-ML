@@ -1,0 +1,10 @@
+Rules for naming a variable
+ i)the name of the vaia ble must consist of upper-case or lower case letters, digits and underscore
+ ii)the name of the variable must be begin with a letter
+**The undescore is a letter
+iii)Upper and lower cases are treated as different eg ALICE and alice
+iv)Must not be a keyword
+
+
+Keyword/reserved keywords ie reserved bc you can't use them as names examples: True, False, None, and, as, assert, break, class, del, continue, else, except, finally, def, from, global, if, import, in, lambda, nonlocal, or, pass, raise, return, try, while, with, yield
+Fortunately, python is  case-sensitive hence you can modify any of these words by changing the case of any letter thus creating a new word which is not reserved anymore eg Import

@@ -1,0 +1,11 @@
+*Sequence type - type of data in python which is able to store more than one value (or less than one, as a sequence can be empty) and these values can be sequentially(hence the name) browsed element by element.
+*As the for loop is a tool essentially designed to iterate through sequences, we can express the definition as: a sequence is data which can be scanned by the for loop.
+
+*Mutability - property of any of python's data that describes its readiness to be freely changed during its execution.
+N/B*There are two kinds of python data:
+       i)mutable
+      ii)immmutable (cannot be modified in any way) eg tuple
+
+*Mutable data can be freely updated at any time - we call such an operation in situ (latin phrase meaning in position) eg 
+               list.append(1)
+

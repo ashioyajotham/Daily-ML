@@ -1,0 +1,12 @@
+if weather_is_good:
+   have lunch()
+  else:
+   eat_a_sandwich()
+else:
+ if tickets_are_available:
+    go_to_the_theater()
+ else:
+    go_shopping()
+
+
+N/B*Every else refers to the if which lies at the same indentation level.

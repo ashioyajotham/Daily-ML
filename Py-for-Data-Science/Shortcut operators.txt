@@ -1,0 +1,17 @@
+Instead of writing sheep =sheep+1 or x=x*2 we can write x*=2 or sheep+=1
+
+N/B*If op is a two-arguement operator and the operator is used in the following context
+     variable = variable op expression
+    It can be simplified as
+     variable op=expresion
+
+*A variable is named location reserved to store values in the memory
+*An identifier is name assigned to a variable
+**********************Rules for creating Identifiers*************************************
+i)Must have a non-empty sequence of characters
+ii)Must begin with the underscore, or a letter and cannot be a python keyword
+iii)The first character may be followed by underscores, letters and digits.Identifiers in python are case-sensitive
+
+N/B*Python is a dynamically-typed languuage, which means you don't need to declare variables. 
+   *Compound asssignment operators = shortcut operators
+   *You can combine text and variables using the + operator and use the print() function to output strings and variables

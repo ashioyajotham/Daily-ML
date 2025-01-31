@@ -1,0 +1,13 @@
+if true_or_false condition:
+         perform_if_condition_true()
+else:
+         perform_if_condition_false()
+
+
+if weather_is_good:
+     go_for_a_walk()
+else:
+    go_to_a_theater()
+have_lunch()
+
+*have_lunch is executed unconditionally

@@ -1,0 +1,2 @@
+int - devoid of the fractional part and float -contain the fraction. They differ significantly in how they are stored in a computer memory.
+*Type - characteristics of the numeric value which determines its kind, range and application.

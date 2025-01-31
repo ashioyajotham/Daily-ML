@@ -1,0 +1,1 @@
+*Pseudocode - a kind of notation which is not an actual programming language ie can neither be compiled nor executed.

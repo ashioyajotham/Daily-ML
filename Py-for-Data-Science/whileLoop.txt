@@ -1,0 +1,5 @@
+while conditional_expression:
+          instruction
+
+*Repeats the execution as long as the condition is true
+*Indentation still is the same

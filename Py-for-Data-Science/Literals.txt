@@ -1,0 +1,2 @@
+Literals are notations for representing some fixed values in code. Python has various types of literals eg numerical(float and integer), string, boolean(false and true eg 1 is true and 0 is false)
+*None literal -special literaland is aso called none type object and is used to rep the absence of value

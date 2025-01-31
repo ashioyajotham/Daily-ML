@@ -1,0 +1,27 @@
+*Another python data structure. It is not a sequence type (but can easily be adapted to sequence processing) and it is mutable(changeable) and indexed collections of data.
+*In Python's world, the word you look for is named key and the word you get from the dictionary is called a value ie the dictionary is aset of key-value pairs. ie
+     my_dictonary = {
+       key1: value1,
+       key2: value2,
+       key3: value3,
+       }
+
+ i)Each key must be unique - it's not possible to have more than one key of the same value
+ii)A key may be any immutable type of object: it can be a number(integer or float), or even a string, but not a list
+iii)a dictionary is not a list - a list contains a set of numbered values while a dictionary holds a pair of values
+iv)the len() function works in a dictionary too - it returns the number of key-value elements in the dictionary
+v)dictionary is a one - way tool - if you have an English - French dictionary, you can look for French equivalents of English terms but not vice versa  
+
+#If you want to access a dictionary item, you can do so by making a reference to its key inside a pair of square brackets(ex.1) or by using the get() method;
+
+pol_eng_dictionary = {
+    "kwiat": "flower"
+    "woda" : "water"
+    "gleba": "soil"
+    }
+
+item_1 = pol_eng_dictionary["gleba"]
+print(item_1)
+
+item_2 = pol_eng_dictionary.get("woda")
+print(item_2)

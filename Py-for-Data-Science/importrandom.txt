@@ -1,0 +1,15 @@
+# Random delivers some mechanisms allowing you to operate
+# with pseudorandom numbers (pseudo - the numbers generated may look 
+# random in a sense you can't predict their 
+#  subsequent values)
+
+# A random number generator takes a value called a seed, treats it as an input value
+# calculates a "random" number based on it (the method depends on a chosen algorithm)
+# and produces a new seed value.
+
+# The random factor of the process may be augmented by setting the seed
+# with a number taken from the current time - this may ensure that each program
+# launch will start from a different seed value(ergo, it will use different seed numbers)
+
+# The length of a cycle in which all seed values are unique may be very long but not infinite;
+# sooner or later the seed values will start repeating  and the generating values will repeat too.

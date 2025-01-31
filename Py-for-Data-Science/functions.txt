@@ -1,0 +1,29 @@
+*Most programming languages allow you to assign a name to a code block that performs a concrete computation. 
+These named blocks can be reused quickly because you can use their name to call them from different places in your code. Programmers call these named blocks subroutines, procedures or functions depending on the language.
+
+*Function - a block of code that performs a specific task when invoked.
+
+**************Where do functions come from?************************
+i)Python itself(built-in)
+ii)Python's preinstalled modules
+iii)Directly from your code(User-defined )
+iv)lambda
+
+*You can define your own function using the def keyword and the following syntax:
+
+def your_function(optional parameters):
+       #body
+
+
+#N/B: Positional arguments must not follow keyword arguments.　Eg
+def subtra(a, b):
+    print(a -b)
+
+subtra(5, b = 2)
+subtra(a = 2, 5)
+
+
+N/B* A function can call other functions or itself. 
+When a function call itself, this situation is known as recursion and the function is the recursive function.
+ 
+

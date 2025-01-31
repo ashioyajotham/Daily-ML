@@ -1,0 +1,38 @@
+1. What is the effect the print() function causes?
+
+  *takes its arguments (it may accept more than one argument and may also accept less than one argument)
+  *converts them into human-readable form if needed (as you may suspect, strings don't require this action, as the string    is already readable)
+  *and sends the resulting data to the output device (usually the console); in other words, anything you put into the    print() function will appear on your screen.
+
+2. What arguments does print() expect?
+
+   Any. Print() is able to operate with virtually all types of data offered by Python. Strings, numbers, characters, logical values, objects -    any of these may be    successfully passed to print().
+
+3. What value does the print() function return?
+
+  None. Its effect is enough.
+
+A line can be empty (i.e., it may contain no instruction at all) but it must not contain two, three or more instructions. This is strictly prohibited.
+
+Note: Python makes one exception to this rule - it allows one instruction to spread across more than one line (which may be helpful when your code contains complex constructions).
+
+* The backslash (\) has a very special meaning when used inside strings - this is called the escape character.The word escape should be understood specifically - it  means that the series of characters in the string escapes for the moment (a very short moment) to introduce a special inclusion.The word escape should be understood  specifically - it means that the series of characters in the string escapes for the moment (a very short moment) to introduce a special inclusion.The letter n placed  after the backslash comes from the word newline.Both the backslash and the n form a special symbol named a newline character, which urges the console to start a new  output line.
+
+***********************keywords**************************
+sep= Controls what to be printed between items
+
+
+end= Introduced in Python 3.It dictates what should be printed after all arguements have been printed. By default its value is a new line ie \n 
+
+N/B*The end and sep parameters can be used for formatting the output of the print function
+
+
+
+
+
+
+
+
+
+
+  

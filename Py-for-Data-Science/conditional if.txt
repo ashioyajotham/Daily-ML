@@ -1,0 +1,7 @@
+*Conditionally executed statements have to be indented ie 
+       if sheep_counter >= 120:
+           make_a_bed()
+           take_a_shower()
+      feed_the_sheepdogs()
+
+*Feed_the_sheepdogs is executed unconditionally when sheep_count reaches the desirsble outcome ie not indented and does not belong to the if block.

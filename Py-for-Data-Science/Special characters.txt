@@ -1,0 +1,2 @@
+The escape character ie backslash is used in representing certain whitespace characters eg \t- tab, \n - newline
+% (Modulus) ie modulo operator returns the remainder of divding the left hand operand by the right hand operand
